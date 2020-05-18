@@ -5,7 +5,8 @@ The application it self should be as simple as possible, but implemented using b
 
 Tools to learn and use
 git (version control),
-venv (virtual environments)
+sphinx (doc auto generation),
+venv (virtual environments),
 unittest (test  
 tox - 
 dev and prod.
