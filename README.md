@@ -8,6 +8,7 @@ git (version control),
 venv (virtual environments)
 unittest (test  
 tox - 
+dev and prod.
 pystyleguide
 flake8 -  
 black - 
