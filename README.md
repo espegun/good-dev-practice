@@ -4,7 +4,6 @@ Espen's effort to move from writing code on and for my local PC to production qu
 The application it self should be as simple as possible, but implemented using best (or at least good) production quality practices.
 
 Tools to learn and use
-======================
 git - Version control
 venv - Control modules with virtual environments
 unittest - 
