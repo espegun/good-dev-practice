@@ -2,13 +2,20 @@ venv
 
 Purpose
 -------
-
+Programmer kan ha behov for spesielle versjoner av pakker, og disse versjonene kan være forskjellig for programmer. 
+Å ha klar kontroll på pakkeversjonen gir også reproduserbarhet.
+Det er MANGE kilder til konflikter og ukonsistens, venvs gir ordens og reproduserbarhet.
 
 How it works
 ------------
+Virtuelle environments er i praksis et directory som inneholder spesifikasjoner for et python prosjekt. Den overstyrer
+PATH, altså hvor den skal lete etter interpreter og pakker.
 
 
 
 
 Useful links and tutorials
 --------------------------
+https://docs.python.org/3/library/venv.html
+https://medium.com/@peterchang_82818/python3-beginner-must-know-venv-fdbbd0421405
+https://medium.com/swlh/a-guide-to-python-virtual-environments-8af34aa106ac <-- DENNE. LINUX-BASERT, MEN SVÆRT BRA.

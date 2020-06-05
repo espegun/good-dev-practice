@@ -1,0 +1,15 @@
+tox
+
+Purpose
+-------
+
+
+How it works
+------------
+
+
+
+
+Useful links and tutorials
+--------------------------
+https://tox.readthedocs.io/en/latest/
