@@ -14,7 +14,7 @@ $ source .venv/bin/activate  # Activate the venv, now you can install packages i
 $ echo $PATH  # Note that a new folder within the venv has been added first
 $ pip install numpy==1.19  # Will be installed in the venv
 $ pip freeze > requirements.txt  # Write all the packages installed in the venv to requirements.txt. The file may also be manually updated.
-$ pip install -r requirements.txt  # Make installations based on a requirements file (typically cloned from a repo).
+$ pip install -r requirements.txt  # Make installations from a requirements file (normally cloned from a repo), but create and acticate a venv first!
 $ python3 main.py  # Just running a script in the venv
 $ deactivate  # Deactivate the venv
 
