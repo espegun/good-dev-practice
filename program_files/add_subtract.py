@@ -15,3 +15,6 @@ def add(array1, array2):
     
 
     return array1 + array2
+
+print("Numpy version {0}".format(np.__version__))
+
