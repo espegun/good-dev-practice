@@ -8,6 +8,7 @@ How it works
 ------------
 A virtual environment is basically a directory which contains the spesifications for a Python project and overruns PATH, i.e. where to look for interpreters and packages. venv's may be activated and deactivated. Generally, don't use Anaconda outside a container.
 
+$ pip install --upgrade pip  # Make sure you have a recent pip version ($ pip --version)
 $ sudo apt-get install python3-venv  # If not installed on Ubuntu, install it
 $ python3 -m venv .venv  # Creates the venv setup (a hidden dir .venv is a convention)
 $ source .venv/bin/activate  # Activate the venv, now you can install packages inside it
