@@ -2,36 +2,29 @@ venv
 
 Purpose
 -------
-Different projects may require different versions of packages. Using virtual environments such as venv gives the ability to control which packages should be included and exactly which versions of them. This reduces inconsistencies and increases reproducability.
+Different projects may require different versions of packages. Using virtual environments such as venv gives the ability to control which packages should be included (avoid overcrow and exactly which versions of them. This reduces inconsistencies and increases reproducability.
 
 How it works
 ------------
-A virtual environment is basically a directory which contains the spesifications for a Python project and overruns $PATH, i.e. where to look for interpreters and packages. venv's may be activated and deactivated.
+A virtual environment is basically a directory which contains the spesifications for a Python project and overruns PATH, i.e. where to look for interpreters and packages. venv's may be activated and deactivated. Generally, don't use Anaconda outside a container.
 
+$ sudo apt-get install python3-venv  # If not installed on Ubuntu, install it
+$ python3 -m venv .venv  # Creates the venv setup (a hidden dir .venv is a convention)
+$ source .venv/bin/activate  # Activate the venv, now you can install packages inside it
+$ echo $PATH  # Note that a new folder within the venv has been added first
+$ pip install numpy==1.19  # Will be installed in the venv
+$ pip freeze > requirements.txt  # Write all the packages installed in the venv to requirements.txt. The file may also be manually updated.
+$ pip install -r requirements.txt  # Make installations based on a requirements file (typically cloned from a repo).
+$ python3 main.py  # Just running a script in the venv
+$ deactivate  # Deactivate the venv
+
+You should add requirements.txt to source control, but not the venv itself (normally hidden in .venv).
 
 
 Useful links and tutorials
 --------------------------
 https://docs.python.org/3/library/venv.html
-https://medium.com/@peterchang_82818/python3-beginner-must-know-venv-fdbbd0421405
-https://medium.com/swlh/a-guide-to-python-virtual-environments-8af34aa106ac <-- DENNE. LINUX-BASERT, MEN SVÆRT BRA.
+https://medium.com/@peterchang_82818/python3-beginner-must-know-venv-fdbbd0421405  # Not good, but BASIC.
+https://medium.com/swlh/a-guide-to-python-virtual-environments-8af34aa106ac <-- Very thorough. Should wrap your head around it.
 
 
-WORK THROUGH THIS!!!!
-All commands below in the Win Command Line.
-
-Normally, create a folder named "venv" in the project folder. Use whenever "project_venv" is used below.
-
-The venv should not be committed to source control, but the requirements.txt file should.
-
-pip list <-- Check installations, in system OR for the venv after activating it
-python -m venv project_venv <-- Creates a separate virtual environment 
-project_venv\Scripts\activate.bat <-- Activates the venv
-where python <-- Lists which python installation is running and which venv
-
-requirements.txt <-- Use to specify which packages should be used, for someone else to copy.
-pip freeze > requirements.txt  <-- Write to the requirements file (or just pip freeze and copy-paste)
-pip install -r requirements.txt  <-- Install according to the content here 
-
-deactivate <-- Deactivates the venv
-rm project_name /s <-- Remove the venv simply by removing the folder.
