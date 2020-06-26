@@ -1,25 +1,16 @@
-pip
+apt and apt-get
 
 Purpose
 -------
-To install 
+Ubuntu package management
 
 
 
 How it works
 ------------
-Remember that pip(3) updates only one of your potentially many Python-distributions. Generally keep global installations pristine and install in venvs.
-
-A "sudo" may be needed in front(?)
-$ pip install [packagename]  # Alternatively with e.g. ==1.10 to specify version
-$ pip install --upgrade [packagename]  # Make sure you have a recent pip version ($ pip --version)
-$ pip --version  # Version and Python Make sure how have an updated version, if not --upgrade pip with pip
-$ pip uninstall [packagename]
-
-python3 -m pip install tox black pip-tools  <== Forstå fullt ut, er dette måten å installere for riktig versjon?
 
 
 Useful links and tutorials
 --------------------------
-https://hackersandslackers.com/multiple-versions-python-ubuntu/  <-- Les denne snarest
+https://itsfoss.com/apt-vs-apt-get-difference/ <== Includes apt command overview
 
