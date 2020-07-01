@@ -19,6 +19,9 @@ which program  # Get the location of the package executable, normally under /usr
 
 ### HIT
 
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+
 For tar.bz, open and read the README file, which may contain the installation instructions.
 Personal choice has been to install stuff at /opt/[PACKAGENAME]
 
