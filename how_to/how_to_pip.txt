@@ -5,15 +5,20 @@ Purpose
 To install 
 
 
+TBD: pip vs pip3
 
 How it works
 ------------
-Remember that pip(3) updates only one of your potentially many Python-distributions. Generally keep global installations pristine and install in venvs.
+Start by making sure you always have an updated version of pip.
+Remember that pip(3) updates only ONE of your potentially many Python-distributions. Generally keep global installations pristine and install in venvs.
+
+$ pip --version  # Check version
+$ apt install python3-pip  # Install pip for python3
+$ python3 -m pip install --upgrade pip  # Upgrade the version
 
 A "sudo" may be needed in front(?)
 $ pip install [packagename]  # Alternatively with e.g. ==1.10 to specify version
 $ pip install --upgrade [packagename]  # Make sure you have a recent pip version ($ pip --version)
-$ pip --version  # Version and Python Make sure how have an updated version, if not --upgrade pip with pip
 $ pip uninstall [packagename]
 
 python3 -m pip install tox black pip-tools  <== Forstå fullt ut, er dette måten å installere for riktig versjon?

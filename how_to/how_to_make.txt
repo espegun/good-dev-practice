@@ -6,12 +6,11 @@ Simple automation tool, typically for compiling and setting up projects.
 
 How it works
 ------------
-A virtual environment is basically a directory which contains the spesifications for a Python project and overruns PATH, i.e. where to look for interpreters and packages. venv's may be activated and 
+...
 
 Useful links and tutorials
 --------------------------
-https://docs.python.org/3/library/venv.html
-https://medium.com/@peterchang_82818/python3-beginner-must-know-venv-fdbbd0421405  # Not good, but BASIC.
-https://medium.com/swlh/a-guide-to-python-virtual-environments-8af34aa106ac <-- Very thorough. Should wrap your head around it.
+https://opensource.com/article/18/8/what-how-makefile
+http://www.gnu.org/software/make/manual/html_node/Introduction.html
 
 
