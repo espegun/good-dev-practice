@@ -2,27 +2,30 @@ pip
 
 Purpose
 -------
-To install 
+The most commonly used tool to download and install python packages (preferably in a venv).
 
+TBD: https://www.caktusgroup.com/blog/2018/09/18/python-dependency-management-pip-tools/  <-- LES TIRSDAG MORGEN!
 
-TBD: pip vs pip3
 
 How it works
 ------------
-Start by making sure you always have an updated version of pip.
-Remember that pip(3) updates only ONE of your potentially many Python-distributions. Generally keep global installations pristine and install in venvs.
+Start by making sure you always have an updated version of pip. 
+Remember that pip3 updates only one of your potentially many global Python-distributions or venvs, be conscious about which you target. Generally keep global installations pristine and install in venvs.
+pip3 is the Python3 version of pip, handled the same way as python, so "pip" may have a softlink to pip3.X. 
 
-$ pip --version  # Check version
 $ apt install python3-pip  # Install pip for python3
-$ python3 -m pip install --upgrade pip  # Upgrade the version
+$ pip --version  # Check version of pip
+$ which pip  # Globally or inside a venv, check where your pip is located
+$ [python3X -m] pip install --upgrade pip  # Make sure you have a recent pip version 
 
 A "sudo" may be needed in front(?)
-$ pip install [packagename]  # Alternatively with e.g. ==1.10 to specify version
-$ pip install --upgrade [packagename]  # Make sure you have a recent pip version ($ pip --version)
+$ pip install [packagename]  [packagename]  # Install one or more packages, optionally with e.g. ==1.10 to specify version 
+$ pip install --upgrade [packagename]
+$ pip list  # Shows all the packages and versions installed (in the venv)
+$ pip show [packagename]  # More detailed info about the package (also works with "pip show pip")
 $ pip uninstall [packagename]
 
-python3 -m pip install tox black pip-tools  <== Forstå fullt ut, er dette måten å installere for riktig versjon?
-
+[ ] pip compile > requirements.txt (compile baserer seg på setup.py)
 
 Useful links and tutorials
 --------------------------
