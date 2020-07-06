@@ -2,11 +2,11 @@ make
 
 Purpose
 -------
-Simple automation tool, typically for compiling and setting up projects.
+Simple automation tool, typically for compiling and setting up projects. The key difference against normal bash-shell is that it only rebuilds files which needs to be rebuilt, because other files they depend on has been updated (newer than themselves).
 
 How it works
 ------------
-...
+Builds from the end output and works backwards, rebuilding any dependencies if the source is newer than the existing target file. This could save a lot of time in large projects.
 
 Useful links and tutorials
 --------------------------
