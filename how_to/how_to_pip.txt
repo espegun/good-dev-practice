@@ -8,14 +8,15 @@ pip-compile is helpful in separating direct and sub dependencies, but - how to u
 
 How it works
 ------------
-Start by making sure you always have an updated version of pip. 
-Remember that pip3 updates only one of your potentially many global Python-distributions or venvs, be conscious about which you target. Generally keep global installations pristine and install in venvs.
+Start by making sure you always have an updated version of pip, setuptools and wheel. 
+Remember that pip3 updates only one of your potentially many global Python-distributions or venvs, be conscious about which you target. Generally it is preferable to run pip as a module with a defined python-version, e.g. $python37 -m pip <something>.
+Generally keep global installations pristine and install in venvs.
 pip3 is the Python3 version of pip, handled the same way as python, so "pip" may have a softlink to pip3.X. 
 
 $ apt install python3-pip  # Install pip for python3, alternatively download and run get-pip.py
 $ pip --version  # Check version of pip
 $ which pip  # Globally or inside a venv, check where your pip is located
-$ [python3X -m] pip install --upgrade pip setuptools wheel  # Make sure you have a recent versions of these
+$ pip install --upgrade pip setuptools wheel  # Make sure you have a recent versions of these
 
 A "sudo" may be needed in front(?)
 $ pip install [packagename]  [packagename]  # Install one or more packages, optionally with e.g. ==1.10 to specify version 
