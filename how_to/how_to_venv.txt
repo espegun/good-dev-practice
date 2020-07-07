@@ -33,7 +33,8 @@ https://docs.python.org/3/library/venv.html
 https://docs.python.org/3/tutorial/venv.html
 https://medium.com/@peterchang_82818/python3-beginner-must-know-venv-fdbbd0421405  # Not good, but BASIC.
 https://levelup.gitconnected.com/using-venv-or-virtual-environment-for-installing-python-packages-94f93409384
+https://hackersandslackers.com/multiple-versions-python-ubuntu/
 
-
-
+To be done
+----------
 

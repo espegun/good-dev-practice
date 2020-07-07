@@ -2,10 +2,9 @@ pip
 
 Purpose
 -------
-The most commonly used tool to download and install python packages (preferably in a venv).
+The most commonly used tool to download and install python packages (preferably in a venv) from PyPI (Python Package Index, pypi.org).
 
-TBD: https://www.caktusgroup.com/blog/2018/09/18/python-dependency-management-pip-tools/  <-- LES TIRSDAG MORGEN!
-
+pip-compile is helpful in separating direct and sub dependencies, but - how to uninstall obsolete sub dependencies? And even if versions are specified in requirements.in, will the list in requirements.txt be consistent over time?
 
 How it works
 ------------
@@ -25,9 +24,20 @@ $ pip list  # Shows all the packages and versions installed (in the venv)
 $ pip show [packagename]  # More detailed info about the package (also works with "pip show pip")
 $ pip uninstall [packagename]
 
-[ ] pip compile > requirements.txt (compile baserer seg på setup.py)
+$ pip install pip-tools
+$ pip-compile --output-file=requirements.txt requirements.in  # Where requirements.in has only directly dependencies, such as pandas==1.0.1, then subdependencies are generated in requirements.txt. 
+
 
 Useful links and tutorials
 --------------------------
-https://hackersandslackers.com/multiple-versions-python-ubuntu/  <-- Les denne snarest
+https://packaging.python.org/tutorials/installing-packages/
+https://alysivji.github.io/python-managing-dependencies-with-pip-tools.html  
+
+Only partially read, because beyond basics, but explores pip-tools and more:
+https://www.caktusgroup.com/blog/2018/09/18/python-dependency-management-pip-tools/
+
+To be done
+----------
+[ ] pip wheel
+[ ] pip hash checking?
 
