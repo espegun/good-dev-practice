@@ -1,4 +1,4 @@
-# How to <SOMETHING>
+# How to bash
 
 ## The purpose
 ...
@@ -11,4 +11,4 @@
 `...`  .... <br />
 
 ## Useful links
-[Description](https://www.cisco.com)<br />
+[Ubuntu command line at Tutorialspoint](https://www.tutorialspoint.com/ubuntu/ubuntu_command_line.htm)<br/>
