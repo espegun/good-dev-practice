@@ -12,6 +12,8 @@ A Makefile consist of a set of RULES, which generally looks like the below. The 
 
 All variables are strings.
 
+If a `make something` command doesn't work, try to run commands in the terminal and recreate it there. 
+
 ## Useful commands
 `target : prerequisites`  # There may be (typically) one or more targets, none or more prereq files, separated by space.
 `<TAB> command`
