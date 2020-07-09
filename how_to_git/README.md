@@ -11,8 +11,8 @@ Here's some code<br />
 `Some code`<br />
 Here's some additional code<br />
 `Additional code`<br />
-`git add *` Stage files which have been added or modified.<br/>
-`git add -u` Remove files which have been deleted in the local repo.<br/>
+`$ git add *` Stage files which have been added or modified.<br/>
+`$ git add -u` Remove files which have been deleted in the local repo.<br/>
 
 
 ## Useful links
