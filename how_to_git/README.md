@@ -2,9 +2,9 @@
 
 ## The purpose
 The general purpose of version control is to:
-- Being able to roll back to previous stages after messing up the code.
-- Collaborate on common projects through merging of branches.
-- Do pull requests and code reviews.
+* Being able to roll back to previous stages after messing up the code.
+* Collaborate on common projects through merging of branches.
+* Do pull requests and code reviews.
 
 ## How does it work?
 It is possible to have a README.md in every folder, which will be displayed in the web GUI.
