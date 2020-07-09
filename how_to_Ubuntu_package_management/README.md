@@ -1,4 +1,4 @@
-# How to Git
+# How to use apt, tarballs and other Ubuntu package management tools
 
 ## The purpose
 APT (Advanced Package Tool) is Ubuntu's package handling system, which we interactivt with through the `apt(-get)` commands. The  apt is a simplified and more user-friendly version of apt-get, replaceing it's most commonly used commands, but not everything, so apt-get will still be needed for some cases.
