@@ -18,7 +18,7 @@ It is possible to have a `README.md` in every folder, which will be displayed in
 `apt show <package_name>`  Get info about the package, dependencies and more.<br />
 `which program`  Get the location of the package executable, normally under `/usr/bin` or `/home/youruser`.<br />
 
-### WORK IN PROGRESS
+### WIP
 sudo apt install software-properties-common<br />
 sudo add-apt-repository ppa:deadsnakes/ppa<br />
 For tar.bz, open and read the README file, which may contain the installation instructions.<br />
@@ -31,6 +31,6 @@ Hva gjør wget kommandoen?<br />
 ## Useful links
 [apt vs apt-get, with commands](https://itsfoss.com/apt-vs-apt-get-difference/)<br />
 [apt command git](https://itsfoss.com/apt-command-guide/)<br />
-
+### WIP
 [Ubuntu file system](https://askubuntu.com/questions/138547/how-to-understand-the-ubuntu-file-system-layout/138551#138551)<br />
 [Installing tarballs, e.g. tar.gz](https://sourcedigit.com/20839-extract-install-tar-gz-files-ubuntu/)<br />
