@@ -5,6 +5,7 @@
 
 ## How does it work?
 It is possible to have a README.md in every folder, which will be displayed in the web GUI.
+Tracked files have be staged or commited earlier, which untracked have not. A `.gitignore` file may be added and should contain a list of files and folders which should deliberately not be tracked, normally because these are machine generated and can be derived from the repo.
 
 ## Useful commands
 Here's some code<br />
