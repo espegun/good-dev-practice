@@ -11,6 +11,9 @@ Here's some code<br />
 `Some code`<br />
 Here's some additional code<br />
 `Additional code`<br />
+`git add *` Stage files which have been added or modified.<br/>
+`git add -u` Remove files which have been deleted in the local repo.<br/>
+
 
 ## Useful links
 [Introduction to version control with git](https://www.atlassian.com/git/tutorials/what-is-version-control)<br />
