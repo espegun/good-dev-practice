@@ -3,7 +3,7 @@
 ## The purpose
 Simple automation tool, typically for compiling and setting up projects. The key difference against normal bash-shell is that it only rebuilds files which needs to be rebuilt, because other files they depend on has been updated (newer than themselves).
 
-An example of use is to first `make build` a Docker image, run the tests __in the container__ and then `make deploy` the image to some production environment. 
+An example of use is to first `make build` a Docker image, run the tests **in the container** and then `make deploy` the image to some production environment. 
 
 ## How does it work?
 Builds from the end output and works backwards, rebuilding any dependencies if the source is newer than the existing target file. This could save a lot of time in large projects.
