@@ -1,0 +1,45 @@
+apt, apt-get and installing tarballs (.tar.gz or .tar.bz2)
+
+Purpose
+-------
+APT (Advanced Package Tool) is Ubuntu's package handling system, which we interactivt with through the apt(-get) commands. The  apt is a simplified and more user-friendly version of apt-get, replaceing it's most commonly used commands, but not everything, so apt-get will still be needed for some cases.
+You can also use the Ubuntu Software app on the Desktop [DOES IT WRITE TO APT AND VICE-VERSA?]
+
+How it works
+------------
+sudo apt update  # Update your local database about available packages at the repos
+sudo apt upgrade  # Upgrade the packages you have installed based on info from an update. Add the -y flag to always answer "Yes".
+sudo apt full-upgrade # Upgrades and also removed packages which needs to be removed
+sudo apt install <package_name>  # Install one or more packages (just add more package names). You may also specify =<version_number>. 
+sudo apt remove <package_name>  # Remove package (binaries)
+sudo apt purge <package_name>  # Remove package (binaries) and it's config files.
+sudo apt autoremove  # Free diskspace by removing obsolete dependencies.
+apt show <package_name>  # Get info about the package, dependencies and more.
+which program  # Get the location of the package executable, normally under /usr/bin or /home/youruser.
+
+### HIT
+
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+
+For tar.bz, open and read the README file, which may contain the installation instructions.
+Personal choice has been to install stuff at /opt/[PACKAGENAME]
+
+(sudo) tar xvzf ~/Downloads/PACKAGENAME.tar.gz # Done from /opt. If so, requires sudo.)
+
+Useful links and tutorials
+--------------------------
+https://itsfoss.com/apt-vs-apt-get-difference/
+https://itsfoss.com/apt-command-guide/
+
+
+https://askubuntu.com/questions/138547/how-to-understand-the-ubuntu-file-system-layout/138551#138551  # Understand the file systemwww.
+
+https://itsfoss.com/apt-vs-apt-get-difference/  # <== Includes apt command overview
+https://sourcedigit.com/20839-extract-install-tar-gz-files-ubuntu/  # Installing tarball (e.g. tar.gz)
+
+
+
+Hva gjør wget kommandoen?
+Forstå hva som skjer her på linken under? wget laster ned til folderen du er i øyeblikket.
+https://github.com/Versent/saml2aws#linux

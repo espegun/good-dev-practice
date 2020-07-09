@@ -1,0 +1,41 @@
+make
+
+Purpose
+-------
+Simple automation tool, typically for compiling and setting up projects. The key difference against normal bash-shell is that it only rebuilds files which needs to be rebuilt, because other files they depend on has been updated (newer than themselves).
+
+How it works
+------------
+Builds from the end output and works backwards, rebuilding any dependencies if the source is newer than the existing target file. This could save a lot of time in large projects.
+
+A Makefile consist of a set of RULES, which generally looks like the below. The target may be a file or simply just a name for a rule, a "phoney target" (if s
+
+
+
+target : prerequisites  # There may be (typically) one or more targets, none or more prereq files, separated by space.
+<TAB> command
+<TAB> command
+
+All variables are strings.
+
+
+.PHONY
+
+
+$ make  # Runs the file
+$ make targetname  # Makes this specific 
+
+
+
+PYTHON := python3.7  # How to set a variable
+@echo ${PYTHON}
+
+VARNAME ?= something  # Assign a value to a variable if not already defined.
+
+Useful links and tutorials
+--------------------------
+https://opensource.com/article/18/8/what-how-makefile
+http://www.gnu.org/software/make/manual/html_node/Introduction.html
+https://makefiletutorial.com/
+
+
