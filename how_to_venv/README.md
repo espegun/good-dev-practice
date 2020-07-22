@@ -13,10 +13,10 @@ A virtual environment is basically a directory which contains the spesifications
 `$ python3.X -m venv .venv` Creates the venv setup (a hidden folder, .venv is the convention folder name). Python3.X will be the Python version available in the venv (through a symlink to the global installation).<br/>
 `$ source .venv/bin/activate` Activate the venv, now you can install packages inside it<br/>
 `$ echo $PATH` Note that a new folder within the venv has been added first<br/>
-`$ pip install numpy==1.19` Will be installed in the venv<br/>
+`$ pip install numpy==1.19` Will be installed in the venv, under the python version used to run pip (or by using a symlink?)<br/>
 `$ pip freeze > requirements.txt` Write all the packages installed in the venv to requirements.txt. The file may also be manually updated.<br/>
 `$ pip install -r requirements.txt` Make installations from a requirements file (normally cloned from a repo), but create and acticate a venv first!<br/>
-`$ python3 main.py` Just running a script in the venv<br/>
+`$ python3.X main.py` Just running a script in the venv<br/>
 `$ deactivate` Deactivate the venv<br/>
 
 You should add `requirements.txt` to source control (GitHub), but not the venv itself (use `.gitignore`). You may install the venv manually or through MakeFiles or equivalents.
