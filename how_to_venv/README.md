@@ -10,7 +10,7 @@ A virtual environment is basically a directory which contains the spesifications
 `$ sudo apt-get install python3-venv` If not installed on Ubuntu, install it<br/>
 `$ pip --version` Check the version and make sure you have an updated one. VENV VERSION?? <br/> 
 `$ pip install --upgrade pip` Upgrade pip if needed. VENV VERSION?? <br/>
-`$ python3.X -m venv .venv` Creates the venv setup (a hidden folder, .venv is the convention folder name). Python3.X will be the Python version available in the venv (through a symlink to the global installation).<br/>
+`$ python3.X -m venv .venv` Creates the venv setup (a hidden folder, .venv is the convention folder name). Python3.X will be the default `python` version available in the venv (through a symlink to the global installation).<br/>
 `$ source .venv/bin/activate` Activate the venv, now you can install packages inside it<br/>
 `$ echo $PATH` Note that a new folder within the venv has been added first<br/>
 `$ pip install numpy==1.19` Will be installed in the venv, under the python version used to run pip (or by using a symlink?)<br/>
