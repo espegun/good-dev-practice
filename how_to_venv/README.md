@@ -1,10 +1,10 @@
 # How to venv
 
 ## The purpose
-Different projects may require different versions of packages. Using virtual environments such as venv gives the ability to control which packages should be included (avoid to many and specify exactly which versions). This reduces inconsistencies and increases reproducability. A good rule of thumb is to keep the global installations to a minimum, and install according to project requirements.
+Different projects may require different versions of packages. Using virtual environments such as venv gives the ability to control which packages should be included (avoid too many packages and specify exactly which versions). This reduces inconsistencies and increases reproducability. A good rule of thumb is to keep the global installations to a minimum, and install according to project requirements.
 
 ## How does it work?
-A virtual environment is basically a directory which contains the spesifications for a Python project and overruns PATH, i.e. where to look for interpreters and packages. venv's may be activated and deactivated. Generally, don't use Anaconda outside a container.
+A virtual environment is basically a directory which contains the spesifications for a Python project and adds this at the start of the environment variable `PATH`, i.e. where to look for interpreters and packages. venv's may be activated and deactivated. Generally, don't use Anaconda outside a container.
 
 ## Useful commands
 `$ sudo apt-get install python3-venv` If not installed on Ubuntu, install it<br/>
@@ -24,5 +24,6 @@ You should add `requirements.txt` to source control (GitHub), but not the venv i
 ## Useful links
 [Python docs](https://docs.python.org/3/library/venv.html)<br/>
 [Not good, but BASIC.](https://medium.com/@peterchang_82818/python3-beginner-must-know-venv-fdbbd0421405)<br/> 
+[Intro at RealPython](https://realpython.com/python-virtual-environments-a-primer/)
 [TBD](https://levelup.gitconnected.com/using-venv-or-virtual-environment-for-installing-python-packages-94f93409384)<br/>
 [TBD2](https://hackersandslackers.com/multiple-versions-python-ubuntu/)<br/>
