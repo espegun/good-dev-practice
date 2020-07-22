@@ -22,7 +22,6 @@ A virtual environment is basically a directory which contains the spesifications
 You should add `requirements.txt` to source control (GitHub), but not the venv itself (use `.gitignore`). You may install the venv manually or through MakeFiles or equivalents.
 
 ## Useful links
-[Description](https://www.cisco.com)<br />
 [Python docs](https://docs.python.org/3/library/venv.html)<br/>
 [Not good, but BASIC.](https://medium.com/@peterchang_82818/python3-beginner-must-know-venv-fdbbd0421405)<br/> 
 [TBD](https://levelup.gitconnected.com/using-venv-or-virtual-environment-for-installing-python-packages-94f93409384)<br/>
