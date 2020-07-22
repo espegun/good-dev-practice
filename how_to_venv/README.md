@@ -7,8 +7,9 @@ Different projects may require different versions of packages. Using virtual env
 A virtual environment is basically a directory which contains the spesifications for a Python project and overruns PATH, i.e. where to look for interpreters and packages. venv's may be activated and deactivated. Generally, don't use Anaconda outside a container.
 
 ## Useful commands
-`$ pip install --upgrade pip` Make sure you have a recent pip version ($ pip --version)<br/>
 `$ sudo apt-get install python3-venv` If not installed on Ubuntu, install it<br/>
+`$ pip --version` Check the version and make sure you have an updated one. VENV VERSION?? <br/> 
+`$ pip install --upgrade pip` Upgrade pip if needed. VENV VERSION?? <br/>
 `$ python3.X -m venv .venv` Creates the venv setup (a hidden folder, .venv is the convention folder name). Python3.X will be the Python version available in the venv (through a symlink to the global installation).<br/>
 `$ source .venv/bin/activate` Activate the venv, now you can install packages inside it<br/>
 `$ echo $PATH` Note that a new folder within the venv has been added first<br/>
