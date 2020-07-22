@@ -8,8 +8,6 @@ A virtual environment is basically a directory which contains the spesifications
 
 ## Useful commands
 `$ sudo apt-get install python3-venv` If not installed on Ubuntu, install it<br/>
-`$ pip --version` Check the version and make sure you have an updated one. VENV VERSION?? <br/> 
-`$ pip install --upgrade pip` Upgrade pip if needed. VENV VERSION?? <br/>
 `$ python3.X -m venv .venv` Creates the venv setup (a hidden folder, .venv is the convention folder name). Python3.X will be the default `python` version available in the venv (through a symlink to the global installation).<br/>
 `$ source .venv/bin/activate` Activate the venv, now you can install packages inside it<br/>
 `$ echo $PATH` Note that a new folder within the venv has been added first<br/>
@@ -24,6 +22,6 @@ You should add `requirements.txt` to source control (GitHub), but not the venv i
 ## Useful links
 [Python docs](https://docs.python.org/3/library/venv.html)<br/>
 [Not good, but simple.](https://medium.com/@peterchang_82818/python3-beginner-must-know-venv-fdbbd0421405)<br/> 
-[Good intro at RealPython](https://realpython.com/python-virtual-environments-a-primer/)<br/>
-[TBD](https://levelup.gitconnected.com/using-venv-or-virtual-environment-for-installing-python-packages-94f93409384)<br/>
+[Good intro at RealPython (including further steps with virtualenvwrapper and pyenv)](https://realpython.com/python-virtual-environments-a-primer/)<br/>
+[TBD1](https://levelup.gitconnected.com/using-venv-or-virtual-environment-for-installing-python-packages-94f93409384)<br/>
 [TBD2](https://hackersandslackers.com/multiple-versions-python-ubuntu/)<br/>
