@@ -24,6 +24,6 @@ You should add `requirements.txt` to source control (GitHub), but not the venv i
 ## Useful links
 [Python docs](https://docs.python.org/3/library/venv.html)<br/>
 [Not good, but BASIC.](https://medium.com/@peterchang_82818/python3-beginner-must-know-venv-fdbbd0421405)<br/> 
-[Intro at RealPython](https://realpython.com/python-virtual-environments-a-primer/)
+[Intro at RealPython](https://realpython.com/python-virtual-environments-a-primer/)<br/>
 [TBD](https://levelup.gitconnected.com/using-venv-or-virtual-environment-for-installing-python-packages-94f93409384)<br/>
 [TBD2](https://hackersandslackers.com/multiple-versions-python-ubuntu/)<br/>
