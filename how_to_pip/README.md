@@ -33,5 +33,5 @@ pip3 is the Python3 version of pip, organized the same way as python, so `pip` m
 [Caktusgroup: Only partially read, because beyond basics, but explores pip-tools and more](https://www.caktusgroup.com/blog/2018/09/18/python-dependency-management-pip-tools/)<br/>
 
 ## To be done?
-pip wheel
-pip hash checking?
+pip wheel<br/>
+pip hash checking?<br/>
