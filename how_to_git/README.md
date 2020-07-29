@@ -7,13 +7,13 @@ The general purpose of version control is to:
 * Do pull requests and code reviews.
 
 ## How does it work?
-It is possible to have a README.md in every folder, which will be displayed in the web GUI.
 Tracked files have be staged or commited earlier, which untracked have not. A `.gitignore` file may be added and should contain a list of files and folders which should deliberately not be tracked, normally because these are machine generated and can be derived from the repo.
 
-The staging area is used to organize what will be commited.
+A **git repository** is ... <br/>
+The **staging area** is used to organize and review what will be commited.<br/>
+The **commit** is a snapshot a the situation at a certain point in time. It may or may not be pushed to another repo.<br/> 
 
-
-It is basically linked nodes.
+*Git is basically about linked commit nodes.*
 
 ## Useful commands
 `$ git add *` Stage files which have been added or modified.<br/>
