@@ -18,18 +18,15 @@
 
 
 ### Various basic
+`$ clear` Clear screen.<br/>
 `$ echo text` Print string.<br/>
 `$ touch filename` Initiate an empty file.<br/>
 `$ cat filename` Print file content.<br/>
 `$ [cmd] > myfile` Write (or `>>` append) cmd output to a file.<br/> 
 
-
-
 ### Pipelines
 `$ ....` <br/>
 `$ ....` <br/>
-
-
 
 ## Useful links
 [Ubuntu command line at Tutorialspoint](https://www.tutorialspoint.com/ubuntu/ubuntu_command_line.htm)<br/>
