@@ -8,9 +8,10 @@
 
 ## Useful commands
 ### Folders and paths
-`ls [option] [file|dir]` List folder content. For flags, see [Linux ls flags](https://www.rapidtables.com/code/linux/ls.html)<br/>
+`$ ls [option] [file|dir]` List folder content. For flags, see [Linux ls flags](https://www.rapidtables.com/code/linux/ls.html)<br/>
+`$ cd [dir]` For more details, see [cd command](https://www.rapidtables.com/code/linux/cd.html)<br/>
 `$ mkdir my_dir` Create a directory<br/>
-`$ rm my_dir` Remove file or folder (use `-rf` flag if there are sub folders/files)<br/>
+`$ rm [folder|file]` Remove file or folder (use `-rf` flag if there are sub folders/files)<br/>
 `$ ....` <br/>
 `$ cp source destination` Copy a file.<br/>
 `$ mv source destination` Move (and/or rename) a file.<br/>
