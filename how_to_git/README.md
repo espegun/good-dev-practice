@@ -17,7 +17,7 @@ The **commit** is a snapshot a the situation at a certain point in time. It may 
 
 ## Useful commands
 `$ git clone [repo_url]` Create a local repo from the central. The URL can be copied from the central repo web page<br/>
-`$ git remote -v` Get the URL of th central repo from which your local repo is syncing with (the origin).<br/>
+`$ git remote -v` Get the URL of th central repo from which your local repo is syncing with through `push` and `pull`.<br/>
 `$ git add *` Stage files which have been added or modified.<br/>
 `$ git add -u` Remove files which have been deleted in the local repo.<br/>
 
