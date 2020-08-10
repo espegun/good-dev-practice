@@ -7,8 +7,28 @@
 ...
 
 ## Useful commands
-`...`  .... <br />
-`...`  .... <br />
+### Folders and paths
+`$ mkdir my_dir` Create a directory<br/>
+`$ rm my_dir` Remove file or folder (use `-rf` flag if there are sub folders/files)<br/>
+`$ ....` <br/>
+`$ cp source destination` Copy a file.<br/>
+`$ mv source destination` Move (and/or rename) a file.<br/>
+
+
+### Various basic
+`$ echo text` Print string.<br/>
+`$ touch filename` Initiate an empty file.<br/>
+`$ cat filename` Print file content.<br/>
+`$ [cmd] > myfile` Write (or `>>` append) cmd output to a file.<br/> 
+
+
+
+### Pipelines
+`$ ....` <br/>
+`$ ....` <br/>
+
+
 
 ## Useful links
 [Ubuntu command line at Tutorialspoint](https://www.tutorialspoint.com/ubuntu/ubuntu_command_line.htm)<br/>
+TBD: Also see various commands at DS123
