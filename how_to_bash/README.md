@@ -22,7 +22,7 @@
 `$ echo text` Print string.<br/>
 `$ touch filename` Initiate an empty file.<br/>
 `$ cat filename` Print file content.<br/>
-`$ [cmd] > myfile` Write (or `>>` append) cmd output to a file.<br/> 
+`$ [cmd] > filename` Write (or `>>` append) cmd output to a file.<br/> 
 
 ### Pipelines
 `$ ....` <br/>
