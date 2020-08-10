@@ -16,13 +16,19 @@ The **commit** is a snapshot a the situation at a certain point in time. It may 
 *Git is basically about linked commit nodes.*
 
 ## Useful commands
+### Initialize
 `$ git init` Create a local repo from scratch, all stored in the hidden `.git` folder.<br/>
 `$ git clone [repo_url]` Create a local repo from the central. The URL can be copied from the central repo web page<br/>
 `$ git remote -v` Get the URL of th central repo from which your local repo is syncing with through `push` and `pull`.<br/>
 
+### Modify and push
 `$ git status` Shows the status of your local files compared to the local repo.<br/>
 `$ git add *` Stage files which have been added or modified.<br/>
 `$ git add -u` Remove files which have been deleted in the local repo.<br/>
+
+### Branches
+...
+
 
 
 ## Useful links
