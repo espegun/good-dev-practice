@@ -8,6 +8,7 @@
 
 ## Useful commands
 ### Folders and paths
+`ls [option] [file|dir]` List folder content. For flags, see [Linux ls flags](https://www.rapidtables.com/code/linux/ls.html)<br/>
 `$ mkdir my_dir` Create a directory<br/>
 `$ rm my_dir` Remove file or folder (use `-rf` flag if there are sub folders/files)<br/>
 `$ ....` <br/>
