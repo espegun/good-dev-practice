@@ -38,7 +38,8 @@ TBD: xargs<br/>
 ### Pipelines
 TBD: Tutorial at the bottom.<br/>
 `$ cat filename | wc -l` The `ẁc` command is typically used in pipelines to count `l`ines or `w`ords.<br/>
-`$ ....` <br/>
+`$ ls | head -3 | tail -1` List all files, pass on the top 3, pass on the last 1.
+....` <br/>
 
 ## Useful links
 [Ubuntu command line at Tutorialspoint](https://www.tutorialspoint.com/ubuntu/ubuntu_command_line.htm)<br/>
