@@ -33,6 +33,8 @@
 `$ echo $ENVVAR` How to read (and in this case print) an environment variable.<br/>
 `$ ...`<br/>
 
+TBD: xargs<br/>
+
 ### Pipelines
 TBD: Tutorial at the bottom.<br/>
 `$ cat filename | wc -l` The `ẁc` command is typically used in pipelines to count `l`ines or `w`ords.<br/>
