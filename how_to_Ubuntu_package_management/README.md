@@ -8,6 +8,8 @@ You can also use the Ubuntu Software app on the Desktop __[DOES IT WRITE TO APT 
 It is possible to have a `README.md` in every folder, which will be displayed in the web GUI.
 
 ## Useful commands
+
+### apt
 `$ sudo apt update`  Update your local database about available packages at the repos.<br/>
 `$ sudo apt upgrade`  Upgrade the packages you have installed based on info from an update. Add the `-y` flag to always answer "Yes".<br/>
 `$ sudo apt full-upgrade`  Upgrades and also removed packages which needs to be removed.<br/>
@@ -17,6 +19,12 @@ It is possible to have a `README.md` in every folder, which will be displayed in
 `$ sudo apt autoremove`  Free diskspace by removing obsolete dependencies.<br/>
 `$ apt show <package_name>`  Get info about the package, dependencies and more.<br/>
 `$ which program`  Get the location of the package executable, normally under `/usr/bin` or `/home/youruser`.<br/>
+
+### tarballs
+...
+
+### Other tools
+...
 
 ### WIP
 sudo apt install software-properties-common<br/>
