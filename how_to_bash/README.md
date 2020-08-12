@@ -24,7 +24,6 @@
 `$ mv source destination` Move (and/or rename) a file.<br/>
 
 ### Various basic
-`$ source filename` Run a file with bash commands-<br/>
 `$ clear` Clear screen.<br/>
 `$ echo text` Print string.<br/>
 `$ touch filename` Initiate an empty file.<br/>
@@ -36,10 +35,20 @@
 
 TBD: xargs<br/>
 
-### Pipelines
+### Pipelines (by examples)
 TBD: Tutorial at the bottom.<br/>
 `$ cat filename | wc -l` The `ẁc` command is typically used in pipelines to count `l`ines or `w`ords.<br/>
 `$ ls | head -3 | tail -1` List all files, pass on the top 3, pass on the last 1.
+`$ cat name_age_sex.txt | grep 'Male'` [grep](https://danielmiessler.com/study/grep/) is suitable to filter lines by regular expressions.
+`$ cat name_age_sex.txt | sed 's/E...n/ESPEN/g'`[sed](https://www.tutorialspoint.com/sed/index.htm) is suitable to do string replacements
+
+
+Useful: 
+jq,
+xargs, 
+find,
+shell loop constructs
+
 ....` <br/>
 
 ## Useful links
