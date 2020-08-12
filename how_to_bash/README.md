@@ -40,7 +40,7 @@
 
 ### Pipelines
 TBD: Tutorial at the bottom.
-`$ ....` <br/>
+`$ cat filename | wc -l` The `ẁc` command is typically used in pipelines to count `l`ines or `w`ords.<br/>
 `$ ....` <br/>
 
 ## Useful links
