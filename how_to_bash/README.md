@@ -8,14 +8,14 @@
 
 ## Useful commands
 ### Folders and paths
+`$ pwd` Print working directory
 `$ ls [option] [file|dir]` List folder content. For details, see [ls command](https://www.rapidtables.com/code/linux/ls.html)<br/>
-`$ cd [dir]` Examples (`/abs/folder`, `rel/folder`, `~` (home)). For details, see [cd command](https://www.rapidtables.com/code/linux/cd.html)<br/>
+`$ cd [dir]` Examples `/abs/folder`, `rel/folder`, `~` (home). For details, see [cd command](https://www.rapidtables.com/code/linux/cd.html)<br/>
 `$ mkdir my_dir` Create a directory.<br/>
 `$ rm [folder|file]` Remove file or folder (use `-rf` flag if there are sub folders/files)<br/>
 `$ ....` <br/>
 `$ cp source destination` Copy a file.<br/>
 `$ mv source destination` Move (and/or rename) a file.<br/>
-
 
 ### Various basic
 `$ clear` Clear screen.<br/>
@@ -27,6 +27,7 @@
 ### Pipelines
 `$ ....` <br/>
 `$ ....` <br/>
+
 
 ## Useful links
 [Ubuntu command line at Tutorialspoint](https://www.tutorialspoint.com/ubuntu/ubuntu_command_line.htm)<br/>
