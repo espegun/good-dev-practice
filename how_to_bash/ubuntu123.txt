@@ -4,29 +4,12 @@ Ctrl + Shift + C/V (Copy-Paste)
 
 command --help  # Always useful
 
-pwd  # print working dir
-cd /abs/folder; cd rel/folder; cd ~ # /home/espen
-mkdir dir
-rmdir dir 
-rm -R FOLDERNAME  # -R = remove folder and all content
 ls # -a shows hidden files (.filename)
 ls -d */  # list directories
 
-
 Generelt, ikke endre systemgenererte symlinks, f.eks. hva python3 peker på. Bruk heller python3.X eksplisitt. 
 
-  
-cp folder/file other_folder
-
-
-cat filename  # Print file
-touch filename # Create new file
-
-echo text_to_be_printed
-command -flag  # Set flag true, def false
-sudo  # super user do
 | # pipeline: cmd output to cmd input
-
 
 TBD: mount
 TBD: whereis python3
@@ -43,9 +26,6 @@ $PATH  # envvar for PATH :)
 
 which python3  # searches PATH to find the path of a command or executable
 
-echo "jalla" > file.txt  # (Over)write to a file
-echo "jalla" >> file.txt  # Append to a file
-
 
 SYMLINKS
 sudo ln -s /home/viktor/Desktop/pimusic.txt PIMUSIC  # link to file. cat PIMUSIC 
@@ -53,24 +33,5 @@ sudo ln -s /home/viktor/Downloads /Downloads  # link to folder. cd /Downloads
 
 ls -la  # Those starting with l are symlinks.
 
-
-
-Updates and package management ========
-sudo apt-get update  # Get package info/dependencies from repos/PPAs
-sudo apt-get upgrade # Upgrade SW in /etc/apt/sources.list
-
-### TIL GIT
-git add -u  # "Add" delete files to the staging area
-
-
-
-AWS!!!! Hvordan få opp tf2.2 i SageMaker
-!pip install --upgrade pip && pip install tensorflow==2.2.0  # Restart instance
-import tensorflow
-print(tensorflow.__version__)
-
-====
-Tidsstempler
-Oppgis ihht til ISO-8601, uten tidssone angitt tolkes ofte som UTC.
 
 
