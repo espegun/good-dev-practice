@@ -9,8 +9,8 @@
 ## Useful commands
 ### Folders and paths
 `$ ls [option] [file|dir]` List folder content. For details, see [ls command](https://www.rapidtables.com/code/linux/ls.html)<br/>
-`$ cd [dir]` For more details, see [cd command](https://www.rapidtables.com/code/linux/cd.html)<br/>
-`$ mkdir my_dir` Create a directory<br/>
+`$ cd [dir]` Change dir. For details, see [cd command](https://www.rapidtables.com/code/linux/cd.html)<br/>
+`$ mkdir my_dir` Create a directory.<br/>
 `$ rm [folder|file]` Remove file or folder (use `-rf` flag if there are sub folders/files)<br/>
 `$ ....` <br/>
 `$ cp source destination` Copy a file.<br/>
