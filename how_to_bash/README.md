@@ -7,6 +7,12 @@
 ...
 
 ## Useful commands
+
+### Generic
+`$ [command] --help` Always useful TBD: WALK THROUGH SEVERAL OF THE BELOW COMMANDS - EXPLAINS IT QUITE WELL! E.g. `touch cat`<br/>
+`$ [command] -flag` Set flag true, default is false <br/>
+`$ sudo` super user do <br/>
+
 ### Folders and paths
 `$ pwd` Print working directory
 `$ ls [option] [file|dir]` List folder content. For details, see [ls command](https://www.rapidtables.com/code/linux/ls.html)<br/>
@@ -21,12 +27,22 @@
 `$ clear` Clear screen.<br/>
 `$ echo text` Print string.<br/>
 `$ touch filename` Initiate an empty file.<br/>
-`$ cat filename` Print file content.<br/>
+`$ cat filename1 (filename2)` The content of one or more file sent to the standard output.<br/>
 `$ [cmd] > filename` Write (or `>>` append) cmd output to a file.<br/> 
+`$ export ENVVAR=100` Temporary environment varible. Use `~/.bashrc` or `~/.profile` to set as persistant.<br/>
+`$ echo $ENVVAR` How to read (and in this case print) an environment variable.<br/>
+`$ ...`<br/>
+
+
+
+
+
 
 ### Pipelines
 `$ ....` <br/>
 `$ ....` <br/>
+
+
 
 
 ## Useful links
