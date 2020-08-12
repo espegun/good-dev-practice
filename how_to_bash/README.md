@@ -24,6 +24,7 @@
 `$ mv source destination` Move (and/or rename) a file.<br/>
 
 ### Various basic
+`$ source filename` Run a file with bash commands-<br/>
 `$ clear` Clear screen.<br/>
 `$ echo text` Print string.<br/>
 `$ touch filename` Initiate an empty file.<br/>
