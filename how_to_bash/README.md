@@ -28,7 +28,7 @@
 `$ echo text` Print string.<br/>
 `$ touch filename` Initiate an empty file.<br/>
 `$ cat filename1 (filename2)` The content of one or more file sent to the standard output.<br/>
-`$ [cmd] > filename` Redirect output from stdout to a file (Use `>>` to append).<br/> 
+`$ [cmd] > filename` Redirect output from STDOUT to a file (Use `>>` to append).<br/> 
 `$ export ENVVAR=100` Temporary environment varible. Use `~/.bashrc` or `~/.profile` to set as persistant.<br/>
 `$ echo $ENVVAR` How to read (and in this case print) an environment variable.<br/>
 `$ ...`<br/>
