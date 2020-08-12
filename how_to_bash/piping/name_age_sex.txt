@@ -1,0 +1,5 @@
+Espen, 42, Male
+Herman, 18, Male
+Helene, 15, Female
+Mathias, 1, Male
+
