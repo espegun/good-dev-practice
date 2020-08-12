@@ -12,7 +12,7 @@ Generally keep global installations pristine and install in venvs.
 pip3 is the Python3 version of pip, organized the same way as python, so `pip` may be a softlink to pip3.X. 
 
 ## Useful commands
-`sudo` may be needed in front(?) sometimes<br/>
+`sudo` may be needed sometimes(?)<br/>
 
 `$ apt install python3-pip`  Install pip for python3, alternatively download and run `get-pip.py`<br/>
 `$ pip --version`  Check version of pip<br/>
