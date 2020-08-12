@@ -39,12 +39,11 @@
 
 
 ### Pipelines
+TBD: Tutorial at the bottom.
 `$ ....` <br/>
 `$ ....` <br/>
-
-
-
 
 ## Useful links
 [Ubuntu command line at Tutorialspoint](https://www.tutorialspoint.com/ubuntu/ubuntu_command_line.htm)<br/>
 TBD: Also see various commands at DS123
+TBD: Piping https://ryanstutorials.net/linuxtutorial/piping.php
