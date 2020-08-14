@@ -41,7 +41,8 @@ TBD: Tutorial at the bottom.<br/>
 `$ ls | head -3 | tail -1` List all files, pass on the top 3, pass on the last 1.
 `$ cat name_age_sex.txt | grep 'Male'` [grep](https://danielmiessler.com/study/grep/) is suitable to filter lines by regular expressions.
 `$ cat name_age_sex.txt | sed 's/E...n/ESPEN/g'`[sed](https://www.tutorialspoint.com/sed/index.htm) is suitable to do string replacements
-
+`....`<br/>
+TBD: jq
 
 Useful: 
 jq,
@@ -55,3 +56,4 @@ shell loop constructs
 [Ubuntu command line at Tutorialspoint](https://www.tutorialspoint.com/ubuntu/ubuntu_command_line.htm)<br/>
 TBD: Also see various commands at DS123
 TBD: Piping https://ryanstutorials.net/linuxtutorial/piping.php
+TBD: jq in commandline (sed for json) (jq)[https://stedolan.github.io/jq/]
