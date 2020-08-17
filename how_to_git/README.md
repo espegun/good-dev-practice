@@ -11,7 +11,7 @@ Tracked files have be staged or commited earlier, which untracked have not. A `.
 
 A **repository** is a data structure where project files are stored as all previously committed versions. Note that the repo itself is not the same as the working directories. People work on their own *local* repo and then sync up and share work through the *central* repo (e.g. hosted on GitHub).<br/>
 The **staging area** is used to organize and review the files which have been added or modified and should be committed to the repo.<br/>
-The **commit** save a snapshot a the situation at a certain point in time. It may or may not be pushed to central repo.<br/> 
+The **commit** save a snapshot a the situation at a certain point in time. It may or may not be pushed to central repo. Each has a unique commit number of around 40 chars.<br/> 
 To **push** is to update the central repo with changes done in the local repo.
 
 *Git is basically about linked commit nodes.*
@@ -35,8 +35,9 @@ In addition to the local repo, there is also a cached version of the central rep
 `$ git fetch origin` Check the central repo if there has been any updates and the local cached version of it. No harm will be done.<br/>
 `$ git pull origin [branch]` Check the central repo if there has been any updates and tries to merge this into your current HEAD branch and working files. Merge conflicts may occurs and it is recommended pull right after having committed.<br/>
 
-
-
+### Log and revert
+`$ git log` This will show the history of commits, with a **commit number**.
+`$ git checkout [commit number]` Reverts your working files to the state at the commit number.
 
 ### Branches
 ...
