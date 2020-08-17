@@ -27,7 +27,7 @@ To **push** is to update the central repo with changes done in the local repo.
 `$ git add *` Stage files which have been added or modified.<br/>
 `$ git add -u` Remove files which have been deleted in the local repo.<br/>
 `$ git reset filename` Unstage file. <br/>
-`$ git commit -m "commit message"` Commit the staged files and create a saved snapshot of the files in the local repo.
+`$ git commit -m "commit message"` Commit the staged files and create a saved snapshot of the files in the local repo.<br/>
 `$ git push` Add `òrigin master` to push to the central master brach. **WIP!**
 
 
