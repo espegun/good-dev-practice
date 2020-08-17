@@ -9,9 +9,10 @@ The general purpose of version control is to:
 ## How does it work?
 Tracked files have be staged or commited earlier, which untracked have not. A `.gitignore` file may be added and should contain a list of files and folders which should deliberately not be tracked, normally because these are machine generated and can be derived from the repo.
 
-A **repository** is a data structure where project files are stored. People work on their own *local* repo and then sync up and share work through the *central* repo (e.g. hosted on GitHub).<br/>
-The **staging area** is used to organize and review which files are modified and should be committed.<br/>
-The **commit** is a snapshot a the situation at a certain point in time. It may or may not be pushed to another repo.<br/> 
+A **repository** is a data structure where project files are stored as all previously committed versions. Note that the repo itself is not the same as the working directories. People work on their own *local* repo and then sync up and share work through the *central* repo (e.g. hosted on GitHub).<br/>
+The **staging area** is used to organize and review the files which have been added or modified and should be committed to the repo.<br/>
+The **commit** save a snapshot a the situation at a certain point in time. It may or may not be pushed to central repo.<br/> 
+To **push** is to update the central repo with changes done in the local repo.
 
 *Git is basically about linked commit nodes.*
 
@@ -21,10 +22,16 @@ The **commit** is a snapshot a the situation at a certain point in time. It may 
 `$ git clone [repo_url]` Clone a central repo to a local (with `.git`). The URL can be copied from the central repo web page<br/>
 `$ git remote -v` Get the URL of the central repo from which your local repo is syncing with through `push` and `pull`.<br/>
 
-### Modify and push
-`$ git status` Shows the status of your local files compared to the local repo.<br/>
+### Stage, commit and push
+`$ git status` Shows the status of your local files (untracked/modified/staged) compared to the local repo (previously committed).<br/>
 `$ git add *` Stage files which have been added or modified.<br/>
 `$ git add -u` Remove files which have been deleted in the local repo.<br/>
+`$ git reset filename` Unstage file. <br/>
+`$ git commit -m "commit message"` Commit the staged files and create a saved snapshot of the files in the local repo.
+`$ git push` Add `òrigin master` to push to the central master brach. **WIP!**
+
+
+
 
 ### Branches
 ...
