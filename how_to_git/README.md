@@ -30,7 +30,10 @@ To **push** is to update the central repo with changes done in the local repo.
 `$ git commit -m "commit message"` Commit the staged files and create a saved snapshot of the files in the local repo.<br/>
 `$ git push` Add `òrigin master` to push to the central master brach. **WIP!**
 
-pull vs fetch? 2
+### Pull and fetch
+In addition to the local repo, there is also a cached version of the central repo on your local computer.<br/>
+`$ git fetch origin` Check the central repo if there has been any updates and updates the locally cached version of the central repo. No harm will be done.<br/>
+`$ git pull` Check the central repo if there has been any updates and tries to merge this into your working files. Merge conflicts may occurs.<br/>
 
 
 
@@ -41,6 +44,7 @@ pull vs fetch? 2
 
 
 ## Useful links
-[Introduction to version control with git](https://www.atlassian.com/git/tutorials/what-is-version-control)<br />
-[Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/)<br />
-[Markdown guide](https://ia.net/writer/support/general/markdown-guide)
+[Atlassian: Git tutorial](https://www.atlassian.com/git/tutorials/what-is-version-control)<br/>
+[Git-tower: Git tutorial](https://www.git-tower.com/learn/git/ebook/en/command-line/basics/what-is-version-control)<br/>
+[Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/)<br/>
+[Markdown guide](https://ia.net/writer/support/general/markdown-guide)<br/>
