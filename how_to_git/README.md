@@ -32,8 +32,8 @@ To **push** is to update the central repo with changes done in the local repo.
 
 ### Pull and fetch
 In addition to the local repo, there is also a cached version of the central repo on your local computer.<br/>
-`$ git fetch origin` Check the central repo if there has been any updates and updates the locally cached version of the central repo. No harm will be done.<br/>
-`$ git pull` Check the central repo if there has been any updates and tries to merge this into your working files. Merge conflicts may occurs.<br/>
+`$ git fetch origin` Check the central repo if there has been any updates and the local cached version of it. No harm will be done.<br/>
+`$ git pull origin [branch]` Check the central repo if there has been any updates and tries to merge this into your current HEAD branch and working files. Merge conflicts may occurs and it is recommended pull right after having committed.<br/>
 
 
 
