@@ -30,6 +30,8 @@ To **push** is to update the central repo with changes done in the local repo.
 `$ git commit -m "commit message"` Commit the staged files and create a saved snapshot of the files in the local repo.<br/>
 `$ git push` Add `òrigin master` to push to the central master brach. **WIP!**
 
+pull vs fetch?
+
 
 
 
