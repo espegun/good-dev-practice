@@ -42,6 +42,9 @@ In addition to the local repo, there is also a cached version of the central rep
 `$ git checkout commit_number` Reverts your workspace to the state at the commit number (sets the HEAD to that commit), *but* you are then not on a branch(!)<br/>
 `$ git revert commit_number` Creates a new commit which has reverted the changes in the specified commit (but not those done later).<br/>
 
+### Various
+`$ git diff optional_filename` Show the differences between one or all tracked files between your local workspace and the local repo. 
+
 Denna er bra:<br/>
 https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/undoing-things#start
 
