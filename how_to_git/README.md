@@ -13,6 +13,7 @@ A **repository** is a data structure where project files are stored as all previ
 The **staging area** is used to organize and review the files which have been added or modified and should be committed to the repo.<br/>
 The **commit** save a snapshot a the situation at a certain point in time. It may or may not be pushed to central repo. Each has a unique commit number of around 40 chars.<br/> 
 To **push** is to update the central repo with changes done in the local repo.
+**TBD pull**
 
 *Git is basically about linked commit nodes.*
 
