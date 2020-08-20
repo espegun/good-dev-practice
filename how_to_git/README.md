@@ -2,9 +2,9 @@
 
 ## The purpose
 The general purpose of version control is to:
-* Being able to roll back to previous stages after messing up the code.
-* Collaborate on common projects through merging of branches.
-* Do pull requests and code reviews.
+* Work in parallell independence on the same project using branches and merges.
+* Being able to roll back to previous commits after introducing bugs and unused features.
+* Easily do pull requests and code reviews.
 
 ## How does it work?
 Tracked files have be staged or commited earlier, which untracked have not. A `.gitignore` file may be added and should contain a list of files and folders which should deliberately not be tracked, normally because these are machine generated and can be derived from the repo.
