@@ -3,7 +3,7 @@
 ## The purpose
 The general purpose of version control is to:
 * Work in parallell independence on the same project using branches and merges.
-* Being able to roll back to previous commits after introducing bugs and unused features.
+* Being able to roll back to previous commits and understand the exact changes after introducing bugs or features have become obsolete.
 * Easily do pull requests and code reviews.
 
 ## How does it work?
