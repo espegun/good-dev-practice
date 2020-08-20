@@ -1,5 +1,8 @@
 # How to Git
 
+**KEEP WORKING FROM THIS POINT**<br/>
+https://www.git-tower.com/learn/git/ebook/en/command-line/basics/starting-with-a-remote-project#start
+
 ## The purpose
 The general purpose of version control is to:
 * Work in parallell independence on the same project using branches and merges.
@@ -7,36 +10,43 @@ The general purpose of version control is to:
 * Easily do pull requests and code reviews.
 
 ## How does it work?
+ 
 Tracked files have be staged or commited earlier, which untracked have not. A `.gitignore` file may be added and should contain a list of files and folders which should deliberately not be tracked, normally because these are machine generated and can be derived from the repo.
 
-A **repository** is a data structure where project files are stored as all previously committed versions. Note that the repo itself is not the same as the working directories. People work on their own *local* repo and then sync up and share work through the *central* repo (e.g. hosted on GitHub).<br/>
-The **staging area** is used to organize and review the files which have been added or modified and should be committed to the repo.<br/>
+A **repository** is a data structure where project files are stored as all previously committed versions, this is stored in a `.git` folder in the root of your project, do not directly manipulate the content of it. Note that the repo itself is not the same as the working directories. People save changes to the *local* repo and then sync up and share work through the *central* repo (e.g. hosted on GitHub).<br/>
+The **staging area** is used to organize and review the files which have been added or modified and should be included in the next commit to the repo.<br/>
 The **commit** save a snapshot a the situation at a certain point in time. It may or may not be pushed to central repo. Each has a unique commit number of around 40 chars.<br/> 
-To **push** is to update the central repo with changes done in the local repo.<br/>
+To **push** is to update a remote (central) repo with changes done in the local repo.<br/>
 **TBD pull**
 
 *Git is basically about linked commit nodes.*
 
 ## Useful commands
+### Git config
+`$ git config --global user.name "Espen Gunnarsen"<br/>
+`$ git config --global user.email "espen@gmail.com"<br/>
+**TBD keys and tokens**<br/>
+
 ### Initialize
 `$ git init` Create a local repo from scratch, all stored in the hidden `.git` folder.<br/>
 `$ git clone [repo_url]` Clone a central repo to a local (with `.git`). The URL can be copied from the central repo web page<br/>
 `$ git remote -v` Get the URL of the central repo from which your local repo is syncing with through `push` and `pull`.<br/>
+`.gitignore` This file should keep a list of files which should not be tracked, typically built or compiled files, personal configuration files, log, cache files and similar. Provide full path from the the working directory for specific files (e.g. `folder/my_log.txt`) or all fill which matches a pattern (e.g. `*.log`).<br/>
 
 ### Stage, commit and push
-`$ git status` Shows the status of your local files (untracked/modified/staged) compared to the local repo (previously committed).<br/>
-`$ git add *` Stage files which have been added or modified.<br/>
+`$ git status` Shows the status of your local files (untracked/modified/staged) compared to the last commit to the local repo.<br/>
+`$ git add *` Stage files which have been added or modified and you want to include in your next commit.<br/>
 `$ git add -u` Remove files which have been deleted in the local repo.<br/>
 `$ git reset filename` Unstage file. <br/>
 `$ git commit -m "commit message"` Commit the staged files and create a saved snapshot of the files in the local repo.<br/>
-`$ git push` Add `òrigin master` to push to the central master brach. **WIP!**
+`$ git push` Add `òrigin master` to push to a remote he central master brach. **WIP!**
 
 ### Pull and fetch
 In addition to the local repo, there is also a cached version of the central repo on your local computer.<br/>
 `$ git fetch origin` Check the central repo if there has been any updates and the local cached version of it. No harm will be done.<br/>
 `$ git pull origin [branch]` Check the central repo if there has been any updates and tries to merge this into your current HEAD branch and working files. Merge conflicts may occurs and it is recommended pull right after having committed.<br/>
 
-### Undoing changes (uncommitted and committed) 
+### Looking at and possibly reverting changes (uncommitted and committed) 
 `$ git checkout HEAD filename` Revert this (tracked) file in the current workspace to it's state during the *last* commit.<br/>
 `$ git reset --hard HEAD` Revert all (tracked) files in the current workspace to it's state during the *last* commit.<br/>
 `$ git log` This will show the history of commits up to HEAD. Add `--all` to see all commits (including later than HEAD), add e.g. `-3` to see the latest 3.<br/>
@@ -46,8 +56,7 @@ In addition to the local repo, there is also a cached version of the central rep
 ### Various
 `$ git diff optional_filename` Show the differences between one or all tracked files between your local workspace and the local repo. 
 
-Denna er bra:<br/>
-https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/undoing-things#start
+
 
 
 ### Branches
