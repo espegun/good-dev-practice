@@ -13,26 +13,26 @@ The general purpose of version control is to:
 
 Git is basically about linked commit nodes.
 
-A **repository** is a data structure where project files are stored as all previously committed versions, this is stored in a `.git` folder in the root of your project, do not directly manipulate the content of it. Note that the repo itself is not the same as the working directories. People save changes to the *local* repo and then sync up and share work through the *central* repo (e.g. hosted on GitHub).<br/>
-The **staging area** is used to organize and review the files which have been added or modified and should be included in the next commit to the repo.<br/>
-The **commit** save a snapshot a the situation at a certain point in time. It may or may not be pushed to central repo. Each has a unique commit number of around 40 chars.<br/> 
-To **push** is to update a remote (central) repo with changes done in the local repo.<br/>
+The **workspace** is the project folders where you are working on files. Note that the workspace is not the same as the repo.
+A **repository** is a data structure where project files are stored in all previously committed versions, this is stored in a `.git` folder below the root folder of your project workspace. Do not directly manipulate the content of `.git`. Modifications in the workspace are committed (saved) to *local* repo and then uploaded and shared through the *central* repo (e.g. hosted on GitHub).<br/>
+The **staging area** (or index) is used to organize and review the files which have been added or modified and should be included in the next commit to the local repo.<br/>
+The **commit** save a snapshot of the files at a certain point in time to the *local* repo. It may or may not be pushed to central repo. Each has a unique commit number of around 40 chars.<br/> 
+To **push** is to update a remote (central) repo with the commit done in the local repo.<br/>
 **TBD fetch**
 **TBD pull**
-**TB add image**
 
 ![Image from unwiredlearning.com](git-flow.png)
 
 
 ## Useful commands
 ### Git config
-`$ git config --global user.name "Espen Gunnarsen"<br/>
-`$ git config --global user.email "espen@gmail.com"<br/>
+`$ git config --global user.name "Espen Gunnarsen"`<br/>
+`$ git config --global user.email "espen@gmail.com"`<br/>
 **TBD keys and tokens**<br/>
 
 ### Initialize
 `$ git init` Create a local repo from scratch, all stored in the hidden `.git` folder.<br/>
-`$ git clone [repo_url]` Clone a central repo to a local (with `.git`). The URL can be copied from the central repo web page<br/>
+`$ git clone [repo_url]` Clone a central repo to a local (with `.git`) into a subfolder. The URL can be copied from the central repo web page<br/>
 `$ git remote -v` Get the URL of the central repo from which your local repo is syncing with through `push` and `pull`.<br/>
 `.gitignore` This file should keep a list of files which should not be tracked, typically built or compiled files, personal configuration files, log, cache files and similar. Provide full path from the the working directory for specific files (e.g. `folder/my_log.txt`) or all fill which matches a pattern (e.g. `*.log`).<br/>
 
