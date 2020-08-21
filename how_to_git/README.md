@@ -16,7 +16,7 @@ Git is basically about linked commit nodes.
 The **workspace** is the project folders where you are working on files. Note that the workspace is not the same as the repo.
 A **repository** is a data structure where project files are stored in all previously committed versions, this is stored in a `.git` folder below the root folder of your project workspace. Do not directly manipulate the content of `.git`. Modifications in the workspace are committed (saved) to *local* repo and then uploaded and shared through the *central* repo (e.g. hosted on GitHub).<br/>
 The **staging area** (or index) is used to organize and review the files which have been added or modified and should be included in the next commit to the local repo.<br/>
-The **commit** save a snapshot of the files at a certain point in time to the *local* repo. It may or may not be pushed to central repo. Each has a unique commit number of around 40 chars.<br/> 
+The **commit** save a snapshot of the files at a certain point in time to the *local* repo. It may or may not be pushed to central repo. Each has a unique commit number of around 40 chars. Only commit related changes in the same commit.<br/> 
 To **push** is to update a remote (central) repo with the commit done in the local repo.<br/>
 **TBD fetch**
 **TBD pull**
