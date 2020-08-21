@@ -10,16 +10,22 @@ The general purpose of version control is to:
 * Easily do pull requests and code reviews.
 
 ## How does it work?
- 
-Tracked files have be staged or commited earlier, which untracked have not. A `.gitignore` file may be added and should contain a list of files and folders which should deliberately not be tracked, normally because these are machine generated and can be derived from the repo.
+
+Git is basically about linked commit nodes.
 
 A **repository** is a data structure where project files are stored as all previously committed versions, this is stored in a `.git` folder in the root of your project, do not directly manipulate the content of it. Note that the repo itself is not the same as the working directories. People save changes to the *local* repo and then sync up and share work through the *central* repo (e.g. hosted on GitHub).<br/>
 The **staging area** is used to organize and review the files which have been added or modified and should be included in the next commit to the repo.<br/>
 The **commit** save a snapshot a the situation at a certain point in time. It may or may not be pushed to central repo. Each has a unique commit number of around 40 chars.<br/> 
 To **push** is to update a remote (central) repo with changes done in the local repo.<br/>
+**TBD fetch**
 **TBD pull**
+**TB add image**
 
-*Git is basically about linked commit nodes.*
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![Workflow](git-flow.png)
+
+https://unwiredlearning.com/blog/git-basic-for-beginners/
+
 
 ## Useful commands
 ### Git config
@@ -64,6 +70,7 @@ In addition to the local repo, there is also a cached version of the central rep
 
 
 ## Useful links
+[Git tutorial, focus on commands](https://unwiredlearning.com/blog/git-basic-for-beginners/)
 [Atlassian: Git tutorial](https://www.atlassian.com/git/tutorials/what-is-version-control)<br/>
 [Git-tower: Git tutorial](https://www.git-tower.com/learn/git/ebook/en/command-line/basics/what-is-version-control)<br/>
 [Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/)<br/>
