@@ -64,11 +64,15 @@ In addition to the local repo, there is also a cached version of the central rep
 
 ### Branches
 ...
+Read this for understanding - not just commands:
+https://nvie.com/posts/a-successful-git-branching-model/
+
 
 
 ## Useful links
 [Git tutorial, focus on commands](https://unwiredlearning.com/blog/git-basic-for-beginners/)
 [Atlassian: Git tutorial](https://www.atlassian.com/git/tutorials/what-is-version-control)<br/>
 [Git-tower: Git tutorial](https://www.git-tower.com/learn/git/ebook/en/command-line/basics/what-is-version-control)<br/>
+
 [Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/)<br/>
 [Markdown guide](https://ia.net/writer/support/general/markdown-guide)<br/>
