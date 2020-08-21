@@ -20,6 +20,7 @@ The **commit** save a snapshot of the files at a certain point in time to the *l
 To **push** is to update a remote (central) repo with the commit done in the local repo.<br/>
 **TBD fetch**
 **TBD pull**
+**TBD merges*
 
 ![Image from unwiredlearning.com](git-flow.png)
 
