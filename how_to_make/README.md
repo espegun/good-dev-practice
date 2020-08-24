@@ -19,7 +19,7 @@ If a `make something` command doesn't work, try to run commands in the terminal 
 `<TAB> command`
 `<TAB> command`
 
-`.PHONY` The prerequisites will be run without , <br/>
+`.PHONY` The prerequisites will be run without checking dependencies.<br/>
 
 `$ make`  # Runs the file<br/>
 `$ make targetname`  # Makes this specific <br/>
@@ -28,6 +28,9 @@ If a `make something` command doesn't work, try to run commands in the terminal 
 `@echo ${PYTHON}`
 
 `VARNAME ?= something`  # Assign a value to a variable if not already defined.
+
+
+TBD: `is-git-clean`
 
 ## Useful links
 [How to makefile](https://opensource.com/article/18/8/what-how-makefile)<br/>
