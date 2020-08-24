@@ -24,6 +24,7 @@ To **push** is to update a remote (central) repo with the commit done in the loc
 **TBD clone**<br/>
 **TBD fork**<br/>
 **TBD stash**<br/>
+**TBD HEAD**<br/>
 
 ![Image from unwiredlearning.com](git-flow.png)
 
