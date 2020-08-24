@@ -1,5 +1,7 @@
 # How to Makefile
 
+**TBD! Check the top TBD link at the bottom**<br/>
+
 ## The purpose
 Simple automation tool, typically for compiling and setting up projects. The key difference against normal bash-shell is that it only rebuilds files which needs to be rebuilt, because other files they depend on has been updated (newer than themselves).
 
@@ -34,9 +36,11 @@ If a `make something` command doesn't work, try to run commands in the terminal 
 TBD: `is-git-clean`
 
 ## Useful links
+[Start with this tutorial!](https://opensource.com/article/18/8/what-how-makefile)<br/>
 [How to makefile](https://opensource.com/article/18/8/what-how-makefile)<br/>
 [Introduction](http://www.gnu.org/software/make/manual/html_node/Introduction.html)<br/>
 [makefiletutorial](https://makefiletutorial.com/)<br/>
+https://medium.com/free-code-camp/makefiles-101-how-to-use-make-as-a-task-automation-tool-69d2ccc3f25e <br/>
 
 
 
