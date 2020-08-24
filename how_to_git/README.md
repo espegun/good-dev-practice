@@ -55,7 +55,7 @@ In addition to the local repo, there is also a cached version of the central rep
 ### Looking at and possibly reverting changes (uncommitted and committed) 
 `$ git checkout HEAD filename` Revert this (tracked) file in the current workspace to it's state during the *last* commit.<br/>
 `$ git reset --hard HEAD` Revert all (tracked) files in the current workspace to it's state during the *last* commit.<br/>
-`$ git log` This will show the history of commits up to HEAD. Add `--all` to see all commits (including later than HEAD), add e.g. `-3` to see the latest 3.<br/>
+`$ git log` This will show the history of commits up to HEAD (scroll with SPACE and q). Add `--all` to see all commits (including later than HEAD). Add e.g. `-3` to see the latest 3.<br/>
 `$ git checkout commit_number` Reverts your workspace to the state at the commit number (sets the HEAD to that commit), *but* you are then not on a branch(!)<br/>
 `$ git revert commit_number` Creates a new commit which has reverted the changes in the specified commit (but not those done later).<br/>
 
