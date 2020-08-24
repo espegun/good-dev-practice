@@ -18,17 +18,20 @@ A **repository** is a data structure where project files are stored in all previ
 The **staging area** (or index) is used to organize and review the files which have been added or modified and should be included in the next commit to the local repo.<br/>
 The **commit** save a snapshot of the files at a certain point in time to the *local* repo. It may or may not be pushed to central repo. Each has a unique commit hash of 40 chars (in most cases, using the first 7 chars is sufficient). Only commit related changes in the same commit.<br/> 
 To **push** is to update a remote (central) repo with the commit done in the local repo.<br/>
+**TBD HEAD**<br/>
+**Branching** is a method of working with different contexts in parallell while minimizing dependencies.
+**Merging** 
+
+![Image from unwiredlearning.com](git-flow.png)
+
+## Useful commands
 **TBD fetch**<br/>
 **TBD pull**<br/>
 **TBD merges**<br/>
 **TBD clone**<br/>
 **TBD fork**<br/>
 **TBD stash**<br/>
-**TBD HEAD**<br/>
 
-![Image from unwiredlearning.com](git-flow.png)
-
-## Useful commands
 ### Git config
 `$ git config --global user.name "Espen Gunnarsen"`<br/>
 `$ git config --global user.email "espen@gmail.com"`<br/>
