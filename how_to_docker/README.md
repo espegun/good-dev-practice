@@ -17,6 +17,6 @@ Easy to move projects between different platforms.
 ## Useful links
 
 ### TBD
-[Ubuntu docker](https://www.tutorialspoint.com/ubuntu/ubuntu_docker.htm)
-[Docker tutorial](https://docker-curriculum.com/)
+[Ubuntu docker](https://www.tutorialspoint.com/ubuntu/ubuntu_docker.htm)<br/>
+[Docker tutorial](https://docker-curriculum.com/)<br/>
 
