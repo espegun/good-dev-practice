@@ -19,8 +19,8 @@ The **staging area** (or index) is used to organize and review the files which h
 The **commit** save a snapshot of the files at a certain point in time to the *local* repo. It may or may not be pushed to central repo. Each has a unique commit hash of 40 chars (in most cases, using the first 7 chars is sufficient). Only commit related changes in the same commit.<br/> 
 To **push** is to update a remote (central) repo with the commit done in the local repo.<br/>
 **Branching** is a method of working with different contexts in parallell while minimizing dependencies.<br/>
-**TBD HEAD**<br/>
-**Merging**<br/> 
+**HEAD** is a reference to the last commit in the currently check-out branch.<br/>
+**Merging** <br/> 
 
 ![Image from unwiredlearning.com](git-flow.png)
 
@@ -72,7 +72,9 @@ In addition to the local repo, there is also a cached version of the central rep
 ### Branches
 ...
 Read this for understanding - not just commands:
-https://nvie.com/posts/a-successful-git-branching-model/
+https://nvie.com/posts/a-successful-git-branching-model/<br/>
+
+TBD merging and resolving merge conflicts
 
 
 
