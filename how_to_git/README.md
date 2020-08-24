@@ -1,7 +1,7 @@
 # How to Git
 
 **KEEP WORKING FROM THIS POINT**<br/>
-https://www.git-tower.com/learn/git/ebook/en/command-line/basics/starting-with-a-remote-project#start
+https://www.git-tower.com/learn/git/ebook/en/command-line/branching-merging/branching-can-change-your-life#start
 
 ## The purpose
 The general purpose of version control is to:
