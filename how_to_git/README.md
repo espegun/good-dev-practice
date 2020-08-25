@@ -1,7 +1,7 @@
 # How to Git
 
 **KEEP WORKING FROM THIS POINT**<br/>
-https://www.git-tower.com/learn/git/ebook/en/command-line/branching-merging/branching-can-change-your-life#start
+https://www.git-tower.com/learn/git/ebook/en/command-line/branching-merging/branching-workflows#start
 
 ## The purpose
 The general purpose of version control is to:
@@ -16,11 +16,11 @@ Git is basically about linked commit nodes. Though one coordinating or central r
 The **workspace** is the project folders where you are working on files. Note that the workspace is not the same as the repo.<br/>
 A **repository** is a data structure where project files are stored in all previously committed versions, this is stored in a `.git` folder below the root folder of your project workspace. Do not directly manipulate the content of `.git`. Modifications in the workspace are committed (saved) to *local* repo and then uploaded and shared through the *central* repo (e.g. hosted on GitHub).<br/>
 The **staging area** (or index) is used to organize and review the files which have been added or modified and should be included in the next commit to the local repo.<br/>
-The **commit** save a snapshot of the files at a certain point in time to the *local* repo. It may or may not be pushed to central repo. Each has a unique commit hash of 40 chars (in most cases, using the first 7 chars is sufficient). Only commit related changes in the same commit.<br/> 
+The **commit** save a snapshot of the files at a certain point in time to the *local* repo. It may or may not be pushed to central repo. Each has a unique commit hash of 40 chars (in most cases, using the first 7 chars is sufficient). Only commit related changes in the same commit. A good rule of thumb is to commit often, but not incomplete work.<br/> 
 To **push** is to update a remote (central) repo with the commit done in the local repo.<br/>
 **Branching** makes it possible to work in parallell on different context while minimizing interdependencies.<br/>
 **HEAD** is a reference to the last commit in the currently check-out branch.<br/>
-**Merging** <br/> 
+**Merging** All the commits which are not present in the working branch are added to it. Sometimes, a separate merge commit will be created.<br/> 
 
 ![Image from unwiredlearning.com](git-flow.png)
 
@@ -63,18 +63,29 @@ In addition to the local repo, there is also a cached version of the central rep
 `$ git checkout commit_number` Reverts your workspace to the state at the commit number (sets the HEAD to that commit), *but* you are then not on a branch(!)<br/>
 `$ git revert commit_number` Creates a new commit which has reverted the changes in the specified commit (but not those done later).<br/>
 
-### Various
-`$ git diff optional_filename` Show the differences between one or all tracked files between your local workspace and the local repo. 
+
+
+### Branching and merging
+`$ git branch branchname` Create a new branch.
+`$ git branch` Which branches are active. `-v` for more detail. `*` indicates the HEAD branch.
+`$ git checkout branchname` Switch to a branch (make it the HEAD branch) and change the content of your working directory.
+`$ git merge branchname` First make the branch you want to merge into your active branch, then specify the branch which has the desired changes.  
 
 
 
 
-### Branches
-...
+### Stashing
+https://www.git-tower.com/learn/git/ebook/en/command-line/branching-merging/stashing#start
+
+
 Read this for understanding - not just commands:
 https://nvie.com/posts/a-successful-git-branching-model/<br/>
 
-TBD merging and resolving merge conflicts
+
+
+
+### Various
+`$ git diff optional_filename` Show the differences between one or all tracked files between your local workspace and the local repo. 
 
 
 
