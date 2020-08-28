@@ -55,6 +55,11 @@ shell loop constructs
 
 ## Useful links
 [Ubuntu command line at Tutorialspoint](https://www.tutorialspoint.com/ubuntu/ubuntu_command_line.htm)<br/>
+https://ubuntu.com/tutorials/command-line-for-beginners#1-overview) 
+https://ryanstutorials.net/linuxtutorial/piping.php
 TBD: Also see various commands at DS123<br/>
 TBD: Piping https://ryanstutorials.net/linuxtutorial/piping.php<br/>
 TBD: jq in commandline (sed for json) [jq](https://stedolan.github.io/jq/)<br/>
+TBD: https://shapeshed.com/jq-json/
+TBD: Also see Althoff p195.
+TBD: chmod, 
