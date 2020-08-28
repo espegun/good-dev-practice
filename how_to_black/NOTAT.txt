@@ -1,0 +1,73 @@
+SE TRÅD MED SIMEN 1:1 PÅ SLACK 2020-08-28
+
+
+Espen Gunnarsen  1:40 PM
+Hei, sitter og gjør noen forbedringer på pipelinen nå, oppdaterer filene og testene, men har et par spørsmål - hvis du har tid til å kikke på det.
+Når jeg kjører tox , så feiler den ene fila på black testen. Ok, prøver å gjøre reformattering med black, men da finner den ikke noe å endre (se vedlegg dump).
+Er god praksis å endre hver av svakhetene i en separat commit, og så gjøre en review når jeg sjekker inn tilbake i master?
+Screenshot from 2020-08-28 13-31-16.png 
+Screenshot from 2020-08-28 13-31-16.png
+
+
+
+
+
+
+
+
+Simen Heggestøyl  1:41 PM
+yes, har tid. skal vi se...
+1:42
+det med black kan være at du har fått forskjellig versjoner i tox virtualenv versus ditt eget
+1:43
+prøv rm -rf .tox og kjør på nytt, eventuelt prøv å oppgradere black-en lokalt
+1:44
+2. ja, hvis endringene er isolerte (ikke avhengige av hverandre), så hører de hjemme i separate commits
+1:44
+men det kan godt være flere commits i en PR
+1:45
+selv om jeg personlig er mer glad i en PR per commit :slightly_smiling_face:
+
+Espen Gunnarsen  1:46 PM
+Kjørte rm -rf .tox  og såtox men fikk samme feil igjen.
+
+Simen Heggestøyl  1:46 PM
+da går det raskere å review, og man kan få inn endringer uavhengig av de andre commitene
+1:46
+ok, prøv pip install --user --upgrade black
+
+Espen Gunnarsen  1:46 PM
+Da kjører vi en PR pr commit inntil videre i hvert fall!
+
+Simen Heggestøyl  1:47 PM
+jepp, gjør det hvis du liker det sånn :slightly_smiling_face:
+
+Espen Gunnarsen  1:47 PM
+Inntil videre tenker jeg at det er bra - få litt hyppig tilbakemeldinger er fint.
+
+Simen Heggestøyl  1:48 PM
+:thumbsup:
+
+Espen Gunnarsen  1:49 PM
+Da har jeg oppgradert black både for python3.6 og python3.7. Mulig det har vært noe mikkmakk med at jeg har hatt to versjoner også
+1:49
+Meeeen... feil
+1:49
+Vent...
+
+Simen Heggestøyl  1:49 PM
+:smile: mikkmakk og python/pip hører sammen
+
+Espen Gunnarsen  1:51 PM
+Der, ja! python3.7 -m black queue_time_predictions/preprocess_image.py måtte til - da reformaterte den fila. Har tidligere sikkert ubevisst kjørt python3.6 versjonen av black og så testet med 3.7 versjonen.
+
+Simen Heggestøyl  1:51 PM
+heh, ja
+1:52
+du kan også sammenligne output fra:
+.tox/black/bin/black --version
+black --version
+python3.7 -m black --version
+
+Espen Gunnarsen  1:53 PM
+Takk, notert. De er alle samme versjon nå (20.8b1)
