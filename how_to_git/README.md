@@ -7,7 +7,7 @@ https://www.git-tower.com/learn/git/ebook/en/command-line/branching-merging/bran
 The general purpose of version control is to:
 * Work in parallell independence on the same project using branches and merges.
 * Being able to roll back to previous commits and understand the exact changes after introducing bugs or features have become obsolete.
-* Easily do pull requests and code reviews.
+* Easily do pull requests and code reviews.<br/>
 Generally keep independent changes in separate commits. Also doing PRs of each commit is simple and quick.
 
 ## How does it work?
