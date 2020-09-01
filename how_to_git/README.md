@@ -15,15 +15,15 @@ Generally keep independent changes in separate commits. Also doing PRs of each c
 
 Git is basically about linked commit nodes. Though one coordinating or central repository is normally used, Git is a *distributed* VCS, not *centralized*.
 
-The **workspace** is the project folders where you are working on files. Note that the workspace is not the same as the repo.<br/>
-A **repository** is a data structure where project files are stored in all previously committed versions, this is stored in a `.git` folder below the root folder of your project workspace. Do not directly manipulate the content of `.git`. Modifications in the workspace are committed (saved) to *local* repo and then uploaded and shared through the *central* repo (e.g. hosted on GitHub).<br/>
-The **staging area** (or index) is used to organize and review the files which have been added or modified and should be included in the next commit to the local repo.<br/>
-The **commit** save a snapshot of the files at a certain point in time to the *local* repo. It may or may not be pushed to central repo. Each has a unique commit hash of 40 chars (in most cases, using the first 7 chars is sufficient). Only commit related changes in the same commit. A good rule of thumb is to commit often, but not incomplete work.<br/> 
-To **push** is to update a remote (central) repo with the commit done in the local repo.<br/>
-**Branching** makes it possible to work in parallell on different context while minimizing interdependencies.<br/>
-**HEAD** is a reference to the last commit in the currently check-out branch.<br/>
-**Merging** All the commits which are not present in the working branch are added to it. Sometimes, a separate merge commit will be created.<br/> 
-**Pull request** Techniclly, several commits and PRs can be made for each branch. However, branches are cheap and at least in the Dataplatform best practice is to close the branch immediately after doing squash'n'merge of an approved PR. Remember that merges into the `master` are expected to be deployed in `prod` (while you may deploy to `dev` during individual development testing).
+* The **workspace** is the project folders where you are working on files. Note that the workspace is not the same as the repo.<br/>
+* A **repository** is a data structure where project files are stored in all previously committed versions, this is stored in a `.git` folder below the root folder of your project workspace. Do not directly manipulate the content of `.git`. Modifications in the workspace are committed (saved) to *local* repo and then uploaded and shared through the *central* repo (e.g. hosted on GitHub).<br/>
+* The **staging area** (or index) is used to organize and review the files which have been added or modified and should be included in the next commit to the local repo.<br/>
+* The **commit** save a snapshot of the files at a certain point in time to the *local* repo. It may or may not be pushed to central repo. Each has a unique commit hash of 40 chars (in most cases, using the first 7 chars is sufficient). Only commit related changes in the same commit. A good rule of thumb is to commit often, but not incomplete work.<br/> 
+* To **push** is to update a remote (central) repo with the commit done in the local repo.<br/>
+* **Branching** makes it possible to work in parallell on different context while minimizing interdependencies.<br/>
+* **HEAD** is a reference to the last commit in the currently check-out branch.<br/>
+* **Merging** All the commits which are not present in the working branch are added to it. Sometimes, a separate merge commit will be created.<br/> 
+* **Pull request** Techniclly, several commits and PRs can be made for each branch. However, branches are cheap and at least in the Dataplatform best practice is to close the branch immediately after doing squash'n'merge of an approved PR. Remember that merges into the `master` are expected to be deployed in `prod` (while you may deploy to `dev` during individual development testing).<br/>
 
 ![Image from unwiredlearning.com](git-flow.png)
 
