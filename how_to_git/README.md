@@ -23,7 +23,7 @@ To **push** is to update a remote (central) repo with the commit done in the loc
 **Branching** makes it possible to work in parallell on different context while minimizing interdependencies.<br/>
 **HEAD** is a reference to the last commit in the currently check-out branch.<br/>
 **Merging** All the commits which are not present in the working branch are added to it. Sometimes, a separate merge commit will be created.<br/> 
-**Pull request** Several commits/PRs can be made for each branchout. However, branches are cheap and at least Dataplatform best practice is to close the branch immediately after doing a squash'n'merge of an approved PR. Remember that merges to master are expected to be deployed in `prod`.
+**Pull request** Techniclly, several commits and PRs can be made for each branch. However, branches are cheap and at least in the Dataplatform best practice is to close the branch immediately after doing squash'n'merge of an approved PR. Remember that merges into the `master` are expected to be deployed in `prod` (while you may deploy to `dev` during individual development testing).
 
 ![Image from unwiredlearning.com](git-flow.png)
 
