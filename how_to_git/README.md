@@ -20,6 +20,7 @@ Git is basically about linked commit nodes. Though one coordinating or central r
 * The **staging area** (or index) is used to organize and review the files which have been added or modified and should be included in the next commit to the local repo.<br/>
 * The **commit** save a snapshot of the files at a certain point in time to the *local* repo. It may or may not be pushed to central repo. Each has a unique commit hash of 40 chars (in most cases, using the first 7 chars is sufficient). Only commit related changes in the same commit. A good rule of thumb is to commit often, but not incomplete work.<br/> 
 * To **push** is to update a remote (central) repo with the commit done in the local repo.<br/>
+* To **pull** is to update your repo with files committed a remote (central) repo (needs to be done after a remote merge).<br/>
 * **Branching** makes it possible to work in parallell on different context while minimizing interdependencies.<br/>
 * **HEAD** is a reference to the last commit in the currently check-out branch.<br/>
 * **Merging** All the commits which are not present in the working branch are added to it. Sometimes, a separate merge commit will be created.<br/> 
