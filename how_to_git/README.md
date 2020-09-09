@@ -39,7 +39,7 @@ Git is basically about linked commit nodes. Though one coordinating or central r
 ### Git config
 `$ git config --global user.name "Espen Gunnarsen"`<br/>
 `$ git config --global user.email "espen@gmail.com"`<br/>
-**TBD keys and tokens**<br/>
+Set up tokens as described [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)<br/>
 
 ### Initialize
 `$ git init` Create a local repo from scratch, all stored in the hidden `.git` folder.<br/>
