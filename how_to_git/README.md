@@ -29,9 +29,7 @@ Git is basically about linked commit nodes. Though one coordinating or central r
 ![Image from unwiredlearning.com](git-flow.png)
 
 ## Useful commands
-**TBD fetch**<br/>
-**TBD pull**<br/>
-**TBD merges**<br/>
+**TBD rebase Pri**<br/>
 **TBD clone**<br/>
 **TBD fork**<br/>
 **TBD stash**<br/>
