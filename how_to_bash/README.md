@@ -43,13 +43,16 @@ TBD: Tutorial at the bottom.<br/>
 `$ cat name_age_sex.txt | grep 'Male'` [grep](https://danielmiessler.com/study/grep/) is suitable to filter lines by regular expressions.
 `$ cat name_age_sex.txt | sed 's/E...n/ESPEN/g'`[sed](https://www.tutorialspoint.com/sed/index.htm) is suitable to do string replacements
 `....`<br/>
-TBD: jq
+TBD: jq<br/>
 
-Useful: 
-jq,
-xargs, 
-find,
-shell loop constructs
+Useful TBDs: 
+jq<br/>
+less<br/>
+uniq -c<br/>
+xargs<br/>
+find<br/>
+shell loop constructs<br/>
+
 
 ....` <br/>
 
