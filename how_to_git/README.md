@@ -65,14 +65,11 @@ In addition to the local repo, there is also a cached version of the central rep
 `$ git checkout commit_number` Reverts your workspace to the state at the commit number (sets the HEAD to that commit), *but* you are then not on a branch(!)<br/>
 `$ git revert commit_number` Creates a new commit which has reverted the changes in the specified commit (but not those done later).<br/>
 
-
-
 ### Branching and merging
-`$ git branch branchname` Create a new branch.
-`$ git branch` Which branches are active. `-v` for more detail. `*` indicates the HEAD branch.
-`$ git checkout branchname` Switch to a branch (make it the HEAD branch) and change the content of your working directory.
-`$ git merge branchname` First make the branch you want to merge into your active branch, then specify the branch which has the desired changes.  
-
+`$ git branch branchname` Create a new branch.<br/>
+`$ git branch` Which branches are active. `-v` for more detail. `*` indicates the HEAD branch..<br/>
+`$ git checkout branchname` Switch to a branch (make it the HEAD branch) and change the content of your working directory..<br/>
+`$ git merge branchname` First make the branch you want to merge into your active branch, then specify the branch which has the desired changes.  .<br/>
 
 
 
