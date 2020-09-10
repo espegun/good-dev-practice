@@ -70,7 +70,7 @@ In addition to the local repo, there is also a cached version of the central rep
 `$ git branch` Which branches are active. `-v` for more detail. `*` indicates the HEAD branch..<br/>
 `$ git checkout branchname` Switch to a branch (make it the HEAD branch) and change the content of your working directory..<br/>
 `$ git merge branchname` First make the branch you want to merge into your active branch, then specify the branch which has the desired changes.  .<br/>
-`$ git rebase  ....` Get latest commits from the (master) branch into your your branch
+`$ git rebase  ....` Pull changes in the (master) branch upstream (central repo) into the branch of your local repo.<br/>
 
 
 ### Stashing
