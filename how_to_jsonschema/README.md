@@ -1,19 +1,26 @@
-# good-dev-practice
-Espen's effort to move from writing code on and for my local PC to production quality code deployed in the cloud (AWS).
+# How to jsonschema (for Python)
 
-The application it self should be as simple as possible, but implemented using best (or at least good) production quality practices.
+## The purpose
+1) To share precisely what data should look 
+2) Be able to automatically validate that data is correctly formatted
 
-Tools to learn and use
-git (version control),
-venv (virtual environments),
-flake8 -  
-black - 
+## How does it work?
 
-sphinx (doc auto generation),
-unittest (test  
-tox - 
-dev and prod.
-pystyleguide
-jenkins - Build pipeline 
-aws (lambda, step functions, public API)
-dev, test and prod
+
+## Useful commands
+`$ pip install jsonschema` Install from PyPI.<br/>
+```
+schema = {
+    "something": {"type": "string"}
+}
+
+S
+```
+See working examples in `validation_testing.py`
+`...`  .... <br />
+`...`  .... <br />
+
+## Useful links
+[json-schema.org](https://json-schema.org/)<br/>
+[jsonschema - an implementation for Python](https://python-jsonschema.readthedocs.io/en/stable/)<br/>
+[jsonschema at the dataplatform](https://github.com/oslokommune/dataplattform/blob/master/docs/jsonschema.md)
