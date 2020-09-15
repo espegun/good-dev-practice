@@ -1,6 +1,7 @@
 # How to jsonschema (for Python)
 
 ## The purpose
+Schemas in general are metadata used to...
 1) To share precisely what data should look 
 2) Be able to automatically validate that data is correctly formatted
 
