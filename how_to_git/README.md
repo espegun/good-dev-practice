@@ -1,8 +1,5 @@
 # How to Git
 
-**KEEP WORKING FROM THIS POINT**<br/>
-https://www.git-tower.com/learn/git/ebook/en/command-line/branching-merging/branching-workflows#start
-
 ## The purpose
 The general purpose of version control is to:
 * Work in parallell independence on the same project using branches and merges.
@@ -29,7 +26,6 @@ Git is basically about linked commit nodes. Though one coordinating or central r
 ![Image from unwiredlearning.com](git-flow.png)
 
 ## Useful commands
-**TBD rebase Pri**<br/>
 **TBD clone**<br/>
 **TBD fork**<br/>
 **TBD stash**<br/>
@@ -51,7 +47,7 @@ Set up a Personal Access Tokens (PAT) as described [here](https://docs.github.co
 `$ git add -u` Remove files which have been deleted in the local repo.<br/>
 `$ git reset filename` Unstage file. <br/>
 `$ git commit -m "commit message"` Commit the staged files and create a saved snapshot of the files in the local repo.<br/>
-`$ git push` Add `òrigin master` to push to a remote he central master brach. **WIP!**
+`$ git push` Add `òrigin master` to push to a remote he central master brach.
 
 ### Pull and fetch
 In addition to the local repo, there is also a cached version of the central repo on your local computer.<br/>
@@ -62,8 +58,9 @@ In addition to the local repo, there is also a cached version of the central rep
 `$ git checkout HEAD filename` Revert this (tracked) file in the current workspace to it's state during the *last* commit.<br/>
 `$ git reset --hard HEAD` Revert all (tracked) files in the current workspace to it's state during the *last* commit.<br/>
 `$ git log` This will show the history of commits up to HEAD (scroll with arrow, quit with q). Some flags: `--all` all commits (including later than HEAD), e.g. `-3` latest 3 commits, `-p` detailed changes.<br/>
-`$ git checkout commit_number` Reverts your workspace to the state at the commit number (sets the HEAD to that commit), *but* you are then not on a branch(!)<br/>
 `$ git revert commit_number` Creates a new commit which has reverted the changes in the specified commit (but not those done later).<br/>
+`$ git reset --hard commit_number` Your current checked out branch will now be at this commit, with later commits being undone.<br/>
+`$ git checkout commit_number` Reverts your workspace to the state at the commit number (sets the HEAD to that commit), *but* you are then not on a branch(!)<br/>
 
 ### Branching and merging
 `$ git branch branchname` Create a new branch.<br/>
@@ -76,17 +73,8 @@ In addition to the local repo, there is also a cached version of the central rep
 ### Stashing
 https://www.git-tower.com/learn/git/ebook/en/command-line/branching-merging/stashing#start
 
-
-Read this for understanding - not just commands:
-https://nvie.com/posts/a-successful-git-branching-model/<br/>
-
-
-
-
 ### Various
 `$ git diff optional_filename` Show the differences between one or all tracked files between your local workspace and the local repo. 
-
-
 
 ## Useful links
 [Git tutorial, focus on commands](https://unwiredlearning.com/blog/git-basic-for-beginners/)
