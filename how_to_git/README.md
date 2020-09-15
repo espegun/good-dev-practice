@@ -77,6 +77,7 @@ https://www.git-tower.com/learn/git/ebook/en/command-line/branching-merging/stas
 `$ git diff optional_filename` Show the differences between one or all tracked files between your local workspace and the local repo. 
 
 ## Useful links
+[The only tutorial you need (TBD - still haven't completed it)] (https://levelup.gitconnected.com/15-git-commands-you-should-learn-before-your-very-first-project-f8eebb8dc6e9)
 [Git tutorial, focus on commands](https://unwiredlearning.com/blog/git-basic-for-beginners/)
 [Atlassian: Git tutorial](https://www.atlassian.com/git/tutorials/what-is-version-control)<br/>
 [Git-tower: Git tutorial](https://www.git-tower.com/learn/git/ebook/en/command-line/basics/what-is-version-control)<br/>
