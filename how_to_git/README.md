@@ -77,10 +77,11 @@ https://www.git-tower.com/learn/git/ebook/en/command-line/branching-merging/stas
 `$ git diff optional_filename` Show the differences between one or all tracked files between your local workspace and the local repo. 
 
 ## Useful links
-[Git tutorial, focus on commands](https://unwiredlearning.com/blog/git-basic-for-beginners/)
+[The only tutorial you need (TBD - still haven't completed it)](https://levelup.gitconnected.com/15-git-commands-you-should-learn-before-your-very-first-project-f8eebb8dc6e9)<br/>
+[Git tutorial, focus on commands](https://unwiredlearning.com/blog/git-basic-for-beginners/)<br/>
 [Atlassian: Git tutorial](https://www.atlassian.com/git/tutorials/what-is-version-control)<br/>
 [Git-tower: Git tutorial](https://www.git-tower.com/learn/git/ebook/en/command-line/basics/what-is-version-control)<br/>
 [Git GUI](https://medium.com/better-programming/stop-using-the-git-cli-d9cbee32cc27)<br/>
 [Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/)<br/>
 [Markdown guide](https://ia.net/writer/support/general/markdown-guide)<br/>
-[The anatomy of a perfect pull request](https://medium.com/@hugooodias/the-anatomy-of-a-perfect-pull-request-567382bb6067)
+[The anatomy of a perfect pull request](https://medium.com/@hugooodias/the-anatomy-of-a-perfect-pull-request-567382bb6067)<br/>
