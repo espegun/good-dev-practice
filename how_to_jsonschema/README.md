@@ -10,16 +10,8 @@ Schemas in general are metadata used to...
 
 ## Useful commands
 `$ pip install jsonschema` Install from PyPI.<br/>
-```
-schema = {
-    "something": {"type": "string"}
-}
 
-S
-```
-See working examples in `validation_testing.py`
-`...`  .... <br />
-`...`  .... <br />
+See the step-by-step intro linked below for the excellent example which is played with in `schema_validation.py`.
 
 ## Useful links
 [json-schema.org](https://json-schema.org/)<br/>
