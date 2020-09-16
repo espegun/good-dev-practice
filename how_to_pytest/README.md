@@ -19,7 +19,7 @@ def test_inc():
 
 
 ## Useful commands
-`...`  .... <br />
+`py.test -h` Show help. <br />
 `...`  .... <br />
 
 ## Useful links
