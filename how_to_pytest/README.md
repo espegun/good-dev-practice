@@ -8,14 +8,14 @@ The tests uses only the plain assert statement, but has a detailed output of whi
 
 `$ pip install pytest`
 ```
-$ pytest
-
 def inc(x):
     return x + 1
 
-def test_answer():
+def test_inc():
     assert inc(3) == 5
 ```
+
+`$ pytest` To run the test(s).
 
 
 ## Useful commands
