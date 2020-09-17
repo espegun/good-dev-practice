@@ -19,11 +19,13 @@ def test_inc():
 
 
 ## Useful commands
-`py.test -h` Show help. <br />
+`$ py.test -h` Show help. <br />
 `$ py.test` To run the test(s), i.e. all functions `test*` in all files `test_*.py` or `*_test.py`. <br/>
 `$ py.test filename` Run only the tests in this file.<br/>
 `$ py.test -k string` Run only a subset of test functions. The `string` must match a part of the test function name for it to run.<br/>
-`$ ...` ....<br/>
+`$ py.test -m setname` This requires `import pytest` in the test file and a wrapper `@pytest.mark.setname` around the test function.<br/>
+Hmmm... to avoid warnings, se... https://docs.pytest.org/en/stable/mark.html<br/>
+
 `$ ...` ....<br/>
 `$ ...` ....<br/>
 
