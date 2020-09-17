@@ -15,11 +15,12 @@ def test_inc():
     assert inc(3) == 5
 ```
 
-`$ pytest` To run the test(s).
+`$ pytest` To run the test(s).<br/>
 
 
 ## Useful commands
 `py.test -h` Show help. <br />
+`$ pytest` To run the test(s), i.e. all functions test_ in ... which files?<br/>
 `...`  .... <br />
 
 ## Useful links
