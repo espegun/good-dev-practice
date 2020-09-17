@@ -20,7 +20,7 @@ def test_inc():
 
 ## Useful commands
 `py.test -h` Show help. <br />
-`$ pytest` To run the test(s), i.e. all functions `test*` in all files `test_*.py`. <br/>
+`$ pytest` To run the test(s), i.e. all functions `test*` in all files `test_*.py` or `*_test.py`. <br/>
 `...`  .... <br />
 
 ## Useful links
