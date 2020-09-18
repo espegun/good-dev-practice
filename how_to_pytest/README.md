@@ -37,7 +37,7 @@ markers =
 `$ pytest filename` Run only the tests in this file.<br/>
 `$ pytest -k string` Run only a subset of test functions. The `string` must match a part of the test function name for it to run.<br/>
 `$ pytest -m my_custom_mark` Run one those marked with this mark. This requires `import pytest` in the test file.<br/>
-`$ pytest -m "not my_custom_mar<k"` Run everything except those marked with this mark.<br/>
+`$ pytest -m "not my_custom_mark"` Run everything except those marked with this mark.<br/>
 `$ ...` ....<br/>
 `$ ...` ....<br/>
 
