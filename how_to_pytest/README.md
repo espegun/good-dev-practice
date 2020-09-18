@@ -19,7 +19,7 @@ Test functions may be given marks (wrappers)
 @pytest.mark.skip  # Always skip it.
 def test_func1():
 
-@pytest.mark.my_custom_mark
+@pytest.mark.my_custom_mark  # Use CLI to select if it should be used.
 def test func2():
 ```
 Custom marks should be defined in the `pytest.ini` file.
