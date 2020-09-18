@@ -6,24 +6,22 @@ pytest is an alternative to Python's standard unittest module, with far less boi
 ## How does it work?
 The tests uses only the plain assert statement, but has a detailed output of which things failed. A test function is any function with a name which starts with "test", like "test_func". The test function contains the assert statements and may or may not be in the same file as the piece of code being tested.
 
-`$ pip install pytest`
+A test in it's simplest form, go more into detail in the attached `.py` files in the repo.
 ```
 def inc(x):
     return x + 1
 
 def test_inc():
-    assert inc(3) == 5
+    assert inc(3) == 4
 ```
 
-`$ pytest` To run the test(s).<br/>
-
-
 ## Useful commands
-`$ py.test -h` Show help. <br />
-`$ py.test` To run the test(s), i.e. all functions `test*` in all files `test_*.py` or `*_test.py`. <br/>
-`$ py.test filename` Run only the tests in this file.<br/>
-`$ py.test -k string` Run only a subset of test functions. The `string` must match a part of the test function name for it to run.<br/>
-`$ py.test -m setname` This requires `import pytest` in the test file and a wrapper `@pytest.mark.setname` around the test function.<br/>
+`$ pip install pytest` Install from PyPI. <br/>
+`$ pytest -h` Show help.<br/>
+`$ pytest` To run the test(s), i.e. all functions `test*` in all files `test_*.py` or `*_test.py`. <br/>
+`$ pytest filename` Run only the tests in this file.<br/>
+`$ pytest -k string` Run only a subset of test functions. The `string` must match a part of the test function name for it to run.<br/>
+`$ pytest -m setname` This requires `import pytest` in the test file and a wrapper `@pytest.mark.setname` around the test function.<br/>
 Hmmm... to avoid warnings, se... https://docs.pytest.org/en/stable/mark.html<br/>
 
 `$ ...` ....<br/>
