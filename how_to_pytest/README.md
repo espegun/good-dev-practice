@@ -14,6 +14,13 @@ def inc(x):
 def test_inc():
     assert inc(3) == 4
 ```
+You can also use the `pytest.ini` file to set meta data about to define custom markers.
+```
+[pytest]
+markers =
+    main_test: The core tests.
+    slow_test: Slow test (deselect with '-m "not slow_test')
+```
 
 ## Useful commands
 `$ pip install pytest` Install from PyPI. <br/>
@@ -22,7 +29,6 @@ def test_inc():
 `$ pytest filename` Run only the tests in this file.<br/>
 `$ pytest -k string` Run only a subset of test functions. The `string` must match a part of the test function name for it to run.<br/>
 `$ pytest -m setname` This requires `import pytest` in the test file and a wrapper `@pytest.mark.setname` around the test function.<br/>
-Hmmm... to avoid warnings, se... https://docs.pytest.org/en/stable/mark.html<br/>
 
 `$ ...` ....<br/>
 `$ ...` ....<br/>
