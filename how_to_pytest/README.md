@@ -14,12 +14,20 @@ def inc(x):
 def test_inc():
     assert inc(3) == 4
 ```
-You can also use the `pytest.ini` file to set meta data about to define custom markers.
+Test functions may be given marks (wrappers)
+```
+@pytest.mark.skip  # Always skip it.
+def test_func1():
+
+@pytest.mark.my_custom_mark
+def test func2():
+```
+Custom marks should be defined in the `pytest.ini` file.
 ```
 [pytest]
 markers =
-    main_test: The core tests.
-    slow_test: Slow test (deselect with '-m "not slow_test')
+    my_custom_mark1: One group of tests.
+    my_custom_mark2: Another group of tests.
 ```
 
 ## Useful commands
@@ -28,8 +36,8 @@ markers =
 `$ pytest` To run the test(s), i.e. all functions `test*` in all files `test_*.py` or `*_test.py`. <br/>
 `$ pytest filename` Run only the tests in this file.<br/>
 `$ pytest -k string` Run only a subset of test functions. The `string` must match a part of the test function name for it to run.<br/>
-`$ pytest -m setname` This requires `import pytest` in the test file and a wrapper `@pytest.mark.setname` around the test function.<br/>
-
+`$ pytest -m my_custom_mark` Run one those marked with this mark. This requires `import pytest` in the test file.<br/>
+`$ pytest -m "not my_custom_mar<k"` Run everything except those marked with this mark.<br/>
 `$ ...` ....<br/>
 `$ ...` ....<br/>
 
