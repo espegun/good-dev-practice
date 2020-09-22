@@ -6,6 +6,8 @@ pytest is an alternative to Python's standard unittest module, with far less boi
 ## How does it work?
 The tests uses only the plain assert statement, but has a detailed output of which things failed. A test function is any function with a name which starts with "test", like "test_func". The test function contains the assert statements and may or may not be in the same file as the piece of code being tested.
 
+You can use fixtures and parametrized tests to setup input and expected output to the test functions.
+
 A test in it's simplest form, go more into detail in the attached `.py` files in the repo.
 ```
 def inc(x):
@@ -30,6 +32,14 @@ markers =
     my_custom_mark2: Another group of tests.
 ```
 
+Parametrization is useful to test a number of scenarios. Note that `"input1, output"` below is one string.
+```
+@pytest.mark.parametrize("input1, output", [(1, 2), (2, 4), (3, 6), (10, 20)])
+def test_double_it(input1, output):
+
+    assert double_it(input1) == output, "failed"
+```
+
 ## Useful commands
 `$ pip install pytest` Install from PyPI. <br/>
 `$ pytest -h` Show help.<br/>
@@ -38,8 +48,6 @@ markers =
 `$ pytest -k string` Run only a subset of test functions. The `string` must match a part of the test function name for it to run.<br/>
 `$ pytest -m my_custom_mark` Run those test functions wrapped in `@pytest.mark.my_custom_mark`. This requires `import pytest` in the same file.<br/>
 `$ pytest -m "not my_custom_mark"` Run everything except the test functions with this mark.<br/>
-`$ ...` ....<br/>
-`$ ...` ....<br/>
 
 ## Useful links
 [Tutorial at guru99](https://www.guru99.com/pytest-tutorial.html)<br/>
