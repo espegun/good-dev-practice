@@ -12,7 +12,7 @@ def inc(x):
     return x + 1
 
 def test_inc():
-    assert inc(3) == 4
+    assert inc(3) == 4, "String to be printed when failing."
 ```
 Test functions may be given marks (wrappers)
 ```
