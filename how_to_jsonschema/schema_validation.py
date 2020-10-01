@@ -38,11 +38,20 @@ schema = {
 data1 = {"productId": 123,
          "productName": "ACME Rocket skates",
          "price": 199.99}
-data2 = {"productId": 124,
+data2 = {"productId": 123,
+         "productName": "ACME Rocket skates",
+         "price": 199.99,
+         "schnoodling_with_the_noodle": True}
+data3 = {"productId": 124,
          "productName": "ACME Rocket skates",
          "price": None}
 
+print("data1")
 validate(instance=data1, schema=schema)  # Passing
-validate(instance=data2, schema=schema)  # Failing
+print("data2")
+validate(instance=data2, schema=schema)  # Passing (adding something NOT defined in the schema is ok)
+print("data3")
+validate(instance=data3, schema=schema)  # Failing - the price must be filled in with a number.
+
 
 print("That was fun.")
