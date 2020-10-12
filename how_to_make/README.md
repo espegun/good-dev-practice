@@ -27,7 +27,7 @@ If a `make something` command doesn't work, try to run commands in the terminal 
 `$ make`  # Runs the file<br/>
 `$ make targetname`  # Makes this specific <br/>
 
-`PYTHON := python3.7`  # How to set a variable<br/>
+`PYTHON := python3.7`  # How to set a variable, here which Python version should be used. May also use e.g. `python3`<br/>
 `@echo ${PYTHON}`
 
 `VARNAME ?= something`  # Assign a value to a variable if not already defined.
