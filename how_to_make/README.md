@@ -28,7 +28,19 @@ If a `make something` command doesn't work, try to run commands in the terminal 
 `$ make targetname`  # Makes this specific <br/>
 
 `PYTHON := python3.7`  # How to set a variable, here which Python version should be used. May also use e.g. `python3`<br/>
+`$(GLOBAL_PY) -m venv $(BUILD_VENV)`  Then use the variable for actual commands.GLOBAL_PY := python3
+BUILD_VENV ?= .build_venv
+BUILD_PY := $(BUILD_VENV)/bin/python
+
+.PHONY: init
+init: $(BUILD_VENV)
+
+$(BUILD_VENV):
+	$(GLOBAL_PY) -m venv $(BUILD_VENV)
+
 `@echo ${PYTHON}`
+
+
 
 `VARNAME ?= something`  # Assign a value to a variable if not already defined.
 
@@ -44,3 +56,13 @@ https://medium.com/free-code-camp/makefiles-101-how-to-use-make-as-a-task-automa
 
 
 
+# Fra Makefile til Køtid
+GLOBAL_PY := python3
+BUILD_VENV ?= .build_venv
+BUILD_PY := $(BUILD_VENV)/bin/python
+
+.PHONY: init
+init: $(BUILD_VENV)
+
+$(BUILD_VENV):
+	$(GLOBAL_PY) -m venv $(BUILD_VENV)
