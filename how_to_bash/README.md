@@ -4,7 +4,8 @@
 ...
 
 ## How does it work?
-...
+Every program you run in the command lines has 3 stream, STDIN, STDOUT and STDERR. `>`, `>>`, `2>` and `|` may be used to direct STDOUT and STDERR to other files or programs.
+(How to include e.g. python ..)
 
 ## Useful commands
 
@@ -48,21 +49,22 @@ TBD: jq<br/>
 Useful TBDs: 
 jq<br/>
 less<br/>
-uniq -c<br/>
+uniq -c  # Nyttig i pipelines <br/>
+cut -d ' ' -f 3 # Nyttig i pipelines <br/>
 xargs<br/>
 find<br/>
 shell loop constructs<br/>
-
-
 ....` <br/>
 
 ## Useful links
 [Ubuntu command line at Tutorialspoint](https://www.tutorialspoint.com/ubuntu/ubuntu_command_line.htm)<br/>
-https://ubuntu.com/tutorials/command-line-for-beginners#1-overview) 
-https://ryanstutorials.net/linuxtutorial/piping.php
+https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)<br/> 
+[Great overview of commands](https://medium.com/@duruldalkanat/bash-commands-guide-129c81cbfe87)<br/>
 TBD: Also see various commands at DS123<br/>
-TBD: Piping https://ryanstutorials.net/linuxtutorial/piping.php<br/>
+WIP: Pipelines https://ryanstutorials.net/linuxtutorial/piping.php<br/>
 TBD: jq in commandline (sed for json) [jq](https://stedolan.github.io/jq/)<br/>
 TBD: https://shapeshed.com/jq-json/
-TBD: Also see Althoff p195.
 TBD: chmod, 
+[Python and pipelines](https://docs.python.org/3/library/pipes.html)<br/>
+https://pymotw.com/3/subprocess/<br/>
+https://www.tutorialspoint.com/python3/os_popen.htm<br/>
