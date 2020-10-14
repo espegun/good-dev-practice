@@ -7,6 +7,7 @@ Easy to move projects between different platforms.
 ...
 
 ## Useful commands
+`$ docker image ls` Get an overview of built images with timestamp.<br/>
 `$ apt get docker.io` Not `docker`, that's a different package.<br/>
 `$ groups espen` ...?<br/>
 `$ docker --version` Get the version<br/>
