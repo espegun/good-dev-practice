@@ -56,12 +56,17 @@ TBD: Tutorial at the bottom.<br/>
 
 
 Useful TBDs: 
+
+uniq https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/?ref=lbp
+filter - hvordan?<br/>
+xargs<br/>
+find<br/>
+sort<br/>
+
+
 jq<br/>
 less<br/>
 uniq -c  # Nyttig i pipelines <br/>
-cut -d ' ' -f 3 # Nyttig i pipelines <br/>
-xargs<br/>
-find<br/>
 yes | apt-get update  # Send yes to any program which requires input<br/>
 shell loop constructs<br/>
 chmod
