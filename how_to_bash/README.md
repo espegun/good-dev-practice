@@ -22,7 +22,7 @@ Every program you run in the command lines has 3 stream, STDIN, STDOUT and STDER
 `$ ls [option] [file|dir]` List folder content. For details, see [ls command](https://www.rapidtables.com/code/linux/ls.html)<br/>
 `$ cd [dir]` Examples `/abs/folder`, `rel/folder`, `~` (home), `-` (previous dir). For details, see [cd command](https://www.rapidtables.com/code/linux/cd.html)<br/>
 `$ mkdir my_dir` Create a directory.<br/>
-`$ rm [folder|file]` Remove file or folder (use `-rf` flag if there are sub folders/files. Useful to clean up test and build environments for a clean start, e.g. m -rf .build_venv .tox`)<br/>
+`$ rm [folder|file]` Remove file or folder (use `-rf` flag if there are sub folders/files. Useful to clean up test and build environments for a clean start, e.g. `rm -rf .build_venv .tox`)<br/>
 `$ ....` <br/>
 `$ cp source destination` Copy a file.<br/>
 `$ mv source destination` Move (and/or rename) a file.<br/>
