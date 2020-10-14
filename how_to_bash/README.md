@@ -43,12 +43,10 @@ TBD: xargs<br/>
 ### Pipelines (by examples)
 TBD: Tutorial at the bottom.<br/>
 `$ cat filename | wc -l` The `ẁc` command is typically used in pipelines to count `l`ines or `w`ords.<br/>
-`$ ls | head -3 | tail -1` List all files, pass on the top 3, pass on the last 1.
-`$ cat name_age_sex.txt | grep 'Male'` [grep](https://danielmiessler.com/study/grep/) is suitable to filter lines by regular expressions.
-`$ cat name_age_sex.txt | sed 's/E...n/ESPEN/g'`[sed](https://www.tutorialspoint.com/sed/index.htm) is suitable to do string replacements
+`$ ls | head -3 | tail -1` List all files, pass on the top 3, pass on the last 1.<br/>
+`$ cat name_age_sex.txt | grep 'Male'` [grep](https://danielmiessler.com/study/grep/) is suitable to filter lines by regular expressions.<br/>
+`$ cat name_age_sex.txt | sed 's/E...n/ESPEN/g'`[sed](https://www.tutorialspoint.com/sed/index.htm) is suitable to do string replacements.<br/>
 `....`<br/>
-TBD: jq<br/>
-
 
 
 Useful TBDs: 
@@ -60,6 +58,7 @@ xargs<br/>
 find<br/>
 yes | apt-get update  # Send yes to any program which requires input<br/>
 shell loop constructs<br/>
+chmod
 ....` <br/>
 
 ## Useful links
@@ -67,10 +66,9 @@ shell loop constructs<br/>
 https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)<br/> 
 [Great overview of commands](https://medium.com/@duruldalkanat/bash-commands-guide-129c81cbfe87)<br/>
 TBD: Also see various commands at DS123<br/>
-WIP: Pipelines https://ryanstutorials.net/linuxtutorial/piping.php<br/>
+Pipelines https://ryanstutorials.net/linuxtutorial/piping.php<br/>
 TBD: jq in commandline (sed for json) [jq](https://stedolan.github.io/jq/)<br/>
 TBD: https://shapeshed.com/jq-json/
-TBD: chmod, 
 [Python and pipelines](https://docs.python.org/3/library/pipes.html)<br/>
 https://pymotw.com/3/subprocess/<br/>
 https://www.tutorialspoint.com/python3/os_popen.htm<br/>
