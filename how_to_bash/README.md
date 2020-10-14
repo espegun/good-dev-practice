@@ -7,17 +7,20 @@
 Every program you run in the command lines has 3 stream, STDIN, STDOUT and STDERR. `>`, `>>`, `2>` and `|` may be used to direct STDOUT and STDERR to other files or programs.
 (How to include e.g. python ..)
 
+
 ## Useful commands
 
 ### Generic
 `$ [command] --help` Always useful TBD: WALK THROUGH SEVERAL OF THE BELOW COMMANDS - EXPLAINS IT QUITE WELL! E.g. `touch cat`<br/>
 `$ [command] -flag` Set flag true, default is false <br/>
 `$ sudo` super user do <br/>
+*Ctrl + C*  Terminate the running program<br/>
+*Ctrl + Shift + C|V* Copy/Paste
 
 ### Folders and paths
 `$ pwd` Print working directory
 `$ ls [option] [file|dir]` List folder content. For details, see [ls command](https://www.rapidtables.com/code/linux/ls.html)<br/>
-`$ cd [dir]` Examples `/abs/folder`, `rel/folder`, `~` (home). For details, see [cd command](https://www.rapidtables.com/code/linux/cd.html)<br/>
+`$ cd [dir]` Examples `/abs/folder`, `rel/folder`, `~` (home), `-` (previous dir). For details, see [cd command](https://www.rapidtables.com/code/linux/cd.html)<br/>
 `$ mkdir my_dir` Create a directory.<br/>
 `$ rm [folder|file]` Remove file or folder (use `-rf` flag if there are sub folders/files)<br/>
 `$ ....` <br/>
@@ -46,6 +49,8 @@ TBD: Tutorial at the bottom.<br/>
 `....`<br/>
 TBD: jq<br/>
 
+
+
 Useful TBDs: 
 jq<br/>
 less<br/>
@@ -53,6 +58,7 @@ uniq -c  # Nyttig i pipelines <br/>
 cut -d ' ' -f 3 # Nyttig i pipelines <br/>
 xargs<br/>
 find<br/>
+yes | apt-get update  # Send yes to any program which requires input<br/>
 shell loop constructs<br/>
 ....` <br/>
 
