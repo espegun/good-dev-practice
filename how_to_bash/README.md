@@ -47,7 +47,7 @@ TBD: Tutorial at the bottom.<br/>
 `$ cat name_age_sex.txt | grep 'Male'` [grep](https://danielmiessler.com/study/grep/) is suitable to filter lines by regular expressions.<br/>
 `$ cat name_age_sex.txt | sed 's/E...n/ESPEN/g'`[sed](https://www.tutorialspoint.com/sed/index.htm) is suitable to do string replacements.<br/>
 `$ cat name_age_sex.txt | cut -c 4-` Cut the 4th and remaining `c`haracters from each line (alt `1,3`, `1-3`, `-4`).
-`$ cat name_age_sex.txt | cut -d "," -f 1,3-4` Specify `d`elimiter and `f`ields. <br/>
+`$ cat name_age_sex.txt | cut -d "," -f 1,3-4` Specify `d`elimiter and `f`ields (or `-b` for bytes/chars). <br/>
 
 
 
