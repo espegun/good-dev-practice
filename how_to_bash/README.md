@@ -44,10 +44,13 @@ TBD: xargs<br/>
 TBD: Tutorial at the bottom.<br/>
 `$ cat filename | wc -l` The `ẁc` command is typically used in pipelines to count `l`ines or `w`ords.<br/>
 `$ ls | head -3 | tail -1` List all files, pass on the top 3, pass on the last 1.<br/>
-`$ cat name_age_sex.txt | grep 'Male'` [grep](https://danielmiessler.com/study/grep/) is suitable to filter lines by regular expressions.<br/>
+`$ cat name_age_sex.txt | grep 'Male'` [grep](https://danielmiessler.com/study/grep/) is suitable to **filter** lines by regular expressions.<br/>
 `$ cat name_age_sex.txt | sed 's/E...n/ESPEN/g'`[sed](https://www.tutorialspoint.com/sed/index.htm) is suitable to do string replacements.<br/>
 `$ cat name_age_sex.txt | cut -c 4-` Cut the 4th and remaining `c`haracters from each line (alt `1,3`, `1-3`, `-4`).
 `$ cat name_age_sex.txt | cut -d "," -f 1,3-4` Specify `d`elimiter and `f`ields (or `-b` for bytes/chars). <br/>
+`$ cat name_age_sex.txt | cut -d "," -f 3 | uniq -u` Return only `u`nique entries.<br/>
+`$ cat name_age_sex.txt | cut -d "," -f 3 | sort | uniq -c` Count number of time an entry is repeated *in sequence*, pre-sort to count total.<br/>
+`$ cat name_age_sex.txt | cut -d "," -f 1 | xargs touch` xargs can be used with functions which requires arguments, not just input.<br/>
 
 
 
@@ -56,17 +59,12 @@ TBD: Tutorial at the bottom.<br/>
 
 
 Useful TBDs: 
-
-uniq https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/?ref=lbp
+https://www.geeksforgeeks.org/pipes-and-filters-in-linux-unix/?ref=rp <br/>
 filter - hvordan?<br/>
-xargs<br/>
 find<br/>
 sort<br/>
-
-
 jq<br/>
 less<br/>
-uniq -c  # Nyttig i pipelines <br/>
 yes | apt-get update  # Send yes to any program which requires input<br/>
 shell loop constructs<br/>
 chmod
