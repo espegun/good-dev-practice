@@ -49,6 +49,7 @@ TBD: Tutorial at the bottom.<br/>
 `$ cat name_age_sex.txt | cut -d "," -f 3 | uniq -u` Return only `u`nique entries.<br/>
 `$ cat name_age_sex.txt | cut -d "," -f 3 | sort | uniq -c` Count number of time an entry is repeated *in sequence*, pre-sort to count total.<br/>
 `$ cat name_age_sex.txt | cut -d "," -f 1 | xargs touch` xargs can be used with functions which requires arguments, not just input.<br/>
+`$ find *.txt | xargs cat` Dump all the content of the test files.<br/>
 `$ cat name_age_sex.txt | xargs -n 2 echo` Use `-n` to specify number of arguments passed. `echo` may take any number, but will now print the *two first input lines* in *one line*.<br/>
 `cat name_age_sex.txt | cut -d "," -f 2 | xargs -n 1 sh -c 'python add_years.py "$@" 10' sh` Combine `xargs` with `sh -c 'some_command' sh` to make advanced inputs.`<br/>
 
