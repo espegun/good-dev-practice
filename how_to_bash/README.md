@@ -35,7 +35,7 @@ Every program you run in the command lines has 3 stream, STDIN, STDOUT and STDER
 `$ export ENVVAR=100` Temporary environment varible. Use `~/.bashrc` or `~/.profile` to set as persistant.<br/>
 `$ echo $ENVVAR` How to read (and in this case print) an environment variable.<br/>
 `$ seq 1 10` Prints `1` to `10`. Input to pipeline?<br/>
-`$ find *.txt` Search for files, see [examples](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/). Great pipeline input.<br/>
+`$ find *.txt` Search for files in the current dir. `find . -name *.py` recursively search from a starting folder. See [examples](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/).<br/>
 *TBD* `jq` parse json lines and files.<br/>
 
 ### Pipelines (by examples)
