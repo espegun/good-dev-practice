@@ -1,5 +1,4 @@
-Espen, 42, Male
-Herman, 18, Male
-Helene, 15, Female
-Mathias, 1, Male
-
+Espen,42,Male,Drammen
+Herman,18,Male,Oslo
+Helene,15,Female,Oslo
+Mathias,1,Male,Bærum
