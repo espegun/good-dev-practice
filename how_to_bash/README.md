@@ -1,12 +1,10 @@
 # How to bash
 
 ## The purpose
-...
+Do great stuff in the bash terminal!
 
 ## How does it work?
 Every program you run in the command lines has 3 stream, STDIN, STDOUT and STDERR. `>`, `>>`, `2>` and `|` may be used to direct STDOUT and STDERR to other files or programs.
-(How to include e.g. python ..)
-
 
 ## Useful commands
 
@@ -36,9 +34,9 @@ Every program you run in the command lines has 3 stream, STDIN, STDOUT and STDER
 `$ [cmd] > filename` Redirect output from STDOUT (printing) to a file (use `>>` to append). The format is typically changed to by line.<br/> 
 `$ export ENVVAR=100` Temporary environment varible. Use `~/.bashrc` or `~/.profile` to set as persistant.<br/>
 `$ echo $ENVVAR` How to read (and in this case print) an environment variable.<br/>
-`$ ...`<br/>
-
-TBD: xargs<br/>
+`$ seq 1 10` Prints `1` to `10`. Input to pipeline?<br/>
+`$ find *.txt` Search for files, see [examples](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/). Great pipeline input.<br/>
+*TBD* `jq` parse json lines and files.<br/>
 
 ### Pipelines (by examples)
 TBD: Tutorial at the bottom.<br/>
@@ -51,24 +49,8 @@ TBD: Tutorial at the bottom.<br/>
 `$ cat name_age_sex.txt | cut -d "," -f 3 | uniq -u` Return only `u`nique entries.<br/>
 `$ cat name_age_sex.txt | cut -d "," -f 3 | sort | uniq -c` Count number of time an entry is repeated *in sequence*, pre-sort to count total.<br/>
 `$ cat name_age_sex.txt | cut -d "," -f 1 | xargs touch` xargs can be used with functions which requires arguments, not just input.<br/>
-
-
-
-
-`....`<br/>
-
-
-Useful TBDs: 
-https://www.geeksforgeeks.org/pipes-and-filters-in-linux-unix/?ref=rp <br/>
-filter - hvordan?<br/>
-find<br/>
-sort<br/>
-jq<br/>
-less<br/>
-yes | apt-get update  # Send yes to any program which requires input<br/>
-shell loop constructs<br/>
-chmod
-....` <br/>
+`$ cat name_age_sex.txt | xargs -n 2 echo` Use `-n` to specify number of arguments passed. `echo` may take any number, but will now print the *two first input lines* in *one line*.<br/>
+`cat name_age_sex.txt | cut -d "," -f 2 | xargs -n 1 sh -c 'python add_years.py "$@" 10' sh` Combine `xargs` with `sh -c 'some_command' sh` to make advanced inputs.`<br/>
 
 ## Useful links
 [Ubuntu command line at Tutorialspoint](https://www.tutorialspoint.com/ubuntu/ubuntu_command_line.htm)<br/>
