@@ -45,7 +45,7 @@ Set up a Personal Access Tokens (PAT) as described [here](https://docs.github.co
 `$ git status` Shows the status of your local files (untracked/modified/staged) compared to the last commit to the local repo.<br/>
 `$ git add *` Stage files which have been added or modified and you want to include in your next commit.<br/>
 `$ git add -u` Remove files which have been deleted in the local repo.<br/>
-`$ git reset filename` Unstage file. <br/>
+`$ git rm filename` Unstage file. <br/>
 `$ git commit -m "commit message"` Commit the staged files and create a saved snapshot of the files in the local repo.<br/>
 `$ git push` Add `òrigin master` to push to a remote he central master brach.
 
