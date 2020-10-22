@@ -26,7 +26,6 @@ Git is basically about linked commit nodes. Though one coordinating or central r
 ![Image from unwiredlearning.com](git-flow.png)
 
 ## Useful commands
-**TBD clone**<br/>
 **TBD fork**<br/>
 **TBD stash**<br/>
 
@@ -40,6 +39,7 @@ Set up a Personal Access Tokens (PAT) as described [here](https://docs.github.co
 `$ git clone [repo_url]` Clone a central repo to a local (with `.git`) into a subfolder. The URL can be copied from the central repo web page<br/>
 `$ git remote -v` Get the URL of the central repo from which your local repo is syncing with through `push` and `pull`.<br/>
 `.gitignore` This file should keep a list of files which should not be tracked, typically built or compiled files, personal configuration files, log, cache files and similar. Provide full path from the the working directory for specific files (e.g. `folder/my_log.txt`) or all fill which matches a pattern (e.g. `*.log`).<br/>
+`$ rm -rf .git` To keep all the content, but remove the status as a repository, simply remove the `.git` folder.<br/>
 
 ### Stage, commit and push
 `$ git status` Shows the status of your local files (untracked/modified/staged) compared to the last commit to the local repo.<br/>
