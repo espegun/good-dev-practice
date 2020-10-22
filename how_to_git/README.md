@@ -8,7 +8,7 @@ The general purpose of version control is to:
 
 Generally keep independent changes in separate commits. Also doing PRs of each commit is simple and quick.
 
-Best practice advice: When starting a new repo, get all the boilerplate stuff established, commit and push. Then you can start add functionailty which should be done in small PRs iterations. Practical example: Clone lambda-boilerplate repo to your local machine, remove `.git`, rename the folder, `init`, set up a remote, empty repo as the origin and push there.git remote rm <remote-name>
+Best practice advice: When starting a new repo, get all the boilerplate stuff established, commit and push. Then you can start add functionailty which should be done in small PRs iterations. Practical example: Clone lambda-boilerplate repo to your local machine, remove `.git`, rename the folder, `init`, set up a remote, empty repo as the origin and push there.
 
 ## How does it work?
 
