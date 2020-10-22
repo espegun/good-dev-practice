@@ -18,7 +18,7 @@ pip3 is the Python3 version of pip, organized the same way as python, so `pip` m
 `$ pip --version`  Check version of pip<br/>
 `$ which pip`  Globally or inside a venv, check where your pip is located <br/>
 `$ pip install --upgrade pip setuptools wheel`  Make sure you have a recent versions of these <br/>
-`$ pip install [packagename] [packagename]`  # Install one or more packages, optionally with e.g. `==1.10` to specify version <br/>
+`$ pip install [packagename] [packagename]`  # Install one or more packages, optionally with e.g. `==1.10` to specify version. Add `--user` to install for the user only (e.g. on EC2 instances).<br/>
 `$ pip install --upgrade [packagename]`  Upgrade a package<br/>
 `$ pip list`  Shows all the packages and versions installed (in the venv)<br/>
 `$ pip show [packagename]`  More detailed info about the package (also works with `pip show pip`)<br/>
