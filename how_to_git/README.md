@@ -8,6 +8,8 @@ The general purpose of version control is to:
 
 Generally keep independent changes in separate commits. Also doing PRs of each commit is simple and quick.
 
+Best practice advice (from Simen 2020-10-22): When starting a new repo, get all the boilerplate stuff established, commit and push. Then add functionailty which should be done in small PRs. Example: Clone a boilerplate repo to your local machine, remove `.git`, rename the folder, `init` and set up a remote, empty repo as the origin.
+
 ## How does it work?
 
 Git is basically about linked commit nodes. Though one coordinating or central repository is normally used, Git is a *distributed* VCS, not *centralized*.
@@ -37,7 +39,9 @@ Set up a Personal Access Tokens (PAT) as described [here](https://docs.github.co
 ### Initialize
 `$ git init` Create a local repo from scratch, all stored in the hidden `.git` folder.<br/>
 `$ git clone [repo_url]` Clone a central repo to a local (with `.git`) into a subfolder. The URL can be copied from the central repo web page<br/>
+`$ git remote add origin [repo_url]` Set a remote repo as the push/pull target (it now has the name origin).<br/>
 `$ git remote -v` Get the URL of the central repo from which your local repo is syncing with through `push` and `pull`.<br/>
+`$ git remote rm <remote-name>` Remove reference to a remote repo (typically this will begit remote rm <remote-name> `òrigin`).<br/> 
 `.gitignore` This file should keep a list of files which should not be tracked, typically built or compiled files, personal configuration files, log, cache files and similar. Provide full path from the the working directory for specific files (e.g. `folder/my_log.txt`) or all fill which matches a pattern (e.g. `*.log`).<br/>
 `$ rm -rf .git` To keep all the content, but remove the status as a repository, simply remove the `.git` folder.<br/>
 
