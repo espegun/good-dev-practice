@@ -23,7 +23,7 @@ Git is basically about linked commit nodes. Though one coordinating or central r
 * **Branching** makes it possible to work in parallell on different context while minimizing interdependencies.<br/>
 * **HEAD** is a reference to the last commit in the currently check-out branch.<br/>
 * **Merging** All the commits which are not present in the working branch are added to it. Sometimes, a separate merge commit will be created.<br/> 
-* **Pull request** Get feedback and possibly approval to merge your commit and branch into another branch (normally `master`). One commit/PR for each branch, then squash, merge and delete the branch (Origo Dataplatform. All merges into `master` are expected to be deployed in `prod` (while you may deploy to `dev` during individual development testing). To make reviews quick and precise, keep them small, independent and well explained.<br/>
+* **Pull request** Get feedback and possibly approval to merge your commit and branch into another branch (normally `master`). One commit/PR for each branch, then squash, merge and delete the branch (Origo Dataplatform. All merges into `master` are expected to be deployed in `prod` (while you may deploy to `dev` during individual development testing). To make reviews quick and precise, keep them small, independent and well explained. For new repos, to invite in *possible* reviewers, **Settings --> Manage access --> Invite teams or people** (then they can be added as reviewers).<br/>
 
 ![Image from unwiredlearning.com](git-flow.png)
 
