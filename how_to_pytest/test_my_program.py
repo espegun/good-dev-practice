@@ -36,14 +36,13 @@ def test_really_slow():
     assert False
 
 
-@pytest.fixture  # Function to run before tests to provide setup data
+@pytest.fixture(scope="function")  # Function to run before tests to provide setup data
 def get_data():
     input_data = {"side1": 2,
                   "side2": 3}
     return input_data
 
 
-@pytest.mark.test_using_fixture
 def test_calculate_rectangle_area(get_data):
 
     # Note that the input data has the NAME of the fixture function. Could also be a list instead of dict.
