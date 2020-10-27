@@ -17,5 +17,6 @@ GitHub looks for .yaml files in the `.github/workflows` directory.
 ## Useful links
 [Tutorial](https://github.com/padok-team/github-actions-tutorial)<br/>
 [Learn Github Actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions)<br/>
-[Bulding and testing Python](https://docs.github.com/en/free-pro-team@latest/actions/guides/building-and-testing-python) - has a good [template](https://github.com/actions/starter-workflows/blob/main/ci/python-package.yml) for Python projects.<br/>
+[GitHub: GitHub Actions quickstart](https://docs.github.com/en/free-pro-team@latest/actions/quickstart)<br/>
+[GitHub: Bulding and testing Python](https://docs.github.com/en/free-pro-team@latest/actions/guides/building-and-testing-python) - has a good [template](https://github.com/actions/starter-workflows/blob/main/ci/python-package.yml) for Python projects.<br/>
 There are also lots of good examples under **Actions** --> **Get started with GitHub Actions** inside the GitHub GUI.<br/>
