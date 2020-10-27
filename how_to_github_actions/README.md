@@ -18,3 +18,4 @@ GitHub looks for .yaml files in the `.github/workflows` directory.
 [Tutorial](https://github.com/padok-team/github-actions-tutorial)<br/>
 [Learn Github Actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions)<br/>
 [Bulding and testing Python](https://docs.github.com/en/free-pro-team@latest/actions/guides/building-and-testing-python)<br/>
+There are also lots of good examples under **Actions** --> **Get started with GitHub Actions** inside the GitHub GUI.<br/>
