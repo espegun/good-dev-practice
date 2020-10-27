@@ -2,6 +2,7 @@
 
 ## The purpose
 Automated testing, building and deployment which mean those processes are all done easier, quicker and more repeatable.
+There are templates for doing Python build, building and deploying Docker images to services such as EC2.
 
 ## How does it work?
 [**Events**](https://help.github.com/en/actions/reference/events-that-trigger-workflows) like commit, opening or closing a pull requests may trigger the start of a workflow.<br/>
