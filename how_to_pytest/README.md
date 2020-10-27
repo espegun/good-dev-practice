@@ -16,7 +16,7 @@ def inc(x):
 def test_inc():
     assert inc(3) == 4, "String to be printed when failing."
 ```
-Here's use of fixture
+Here a fixture is run before the actual test [fixture](https://docs.pytest.org/en/stable/fixture.html), more typically to set up remote connections.<br/>
 ```
 @pytest.fixture(scope="function")  # Function to run before tests to provide setup data
 def get_data():
