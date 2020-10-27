@@ -8,7 +8,6 @@ Automated testing, building and deployment which mean those processes are all do
 **Jobs** are actions like running tests, building containers or deploying those to the production environment.<br/>
 **Workflows** are composed on a number of jobs.<br/>
 
-
 GitHub looks for .yaml files in the `.github/workflows` directory.
 
 
@@ -17,3 +16,5 @@ GitHub looks for .yaml files in the `.github/workflows` directory.
 
 ## Useful links
 [Tutorial](https://github.com/padok-team/github-actions-tutorial)<br/>
+[Learn Github Actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions)<br/>
+[Bulding and testing Python](https://docs.github.com/en/free-pro-team@latest/actions/guides/building-and-testing-python)<br/>
