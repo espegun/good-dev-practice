@@ -16,7 +16,21 @@ def inc(x):
 def test_inc():
     assert inc(3) == 4, "String to be printed when failing."
 ```
-Test functions may be given marks (wrappers)
+Here's use of fixture
+```
+@pytest.fixture(scope="function")  # Function to run before tests to provide setup data
+def get_data():
+    input_data = {"side1": 2,
+                  "side2": 3}
+    return input_data
+
+def test_calculate_rectangle_area(get_data):
+
+    # Note that the input data has the NAME of the fixture function. Could also be a list instead of dict.
+    assert calculate_rectangle_area(get_data["side1"], get_data["side2"]) == 6, "Area calculation failed!"
+```
+
+Test functions may be given other marks (wrappers)
 ```
 @pytest.mark.skip  # Always skip it.
 def test_func1():
