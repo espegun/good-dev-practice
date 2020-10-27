@@ -10,5 +10,4 @@ GitHub looks for .yaml files in the `.github/workflows` directory.
 `$ ...` Some comment<br/>
 
 ## Useful links
-[Oslo kommune](https://www.oslo.kommune.no/)
-
+[Tutorial](https://github.com/padok-team/github-actions-tutorial)<br/>
