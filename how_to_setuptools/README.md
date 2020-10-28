@@ -11,7 +11,7 @@ How it works
 ------------
 `setup.py` should be in the same folder as README.md and above subfolders containing the actual source code (also an empty __init__py file in the subfolder). 
 
-# The minimum version of setup.py
+## The minimum version of setup.py
 ```
 from setuptools import setup, find_packages
 setup(
@@ -34,5 +34,5 @@ It may be a good idea to first read README.md then assign it to setup(long_descr
 
 Useful links and tutorials
 --------------------------
-https://setuptools.readthedocs.io/en/latest/setuptools.html#developer-s-guide
-https://godatadriven.com/blog/a-practical-guide-to-using-setup-py/# How to <SOMETHING>
+https://setuptools.readthedocs.io/en/latest/setuptools.html#developer-s-guide<br/>
+https://godatadriven.com/blog/a-practical-guide-to-using-setup-py/# How to <SOMETHING><br/>
