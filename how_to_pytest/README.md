@@ -4,7 +4,7 @@
 pytest is an alternative to Python's standard unittest module, with far less boilerplate code.
 
 ## How does it work?
-The tests uses only the plain assert statement, but has a detailed output of which things failed. A test function is any function with a name which starts with "test", like "test_func". The test function contains the assert statements and may or may not be in the same file as the piece of code being tested.
+The tests uses only the plain `assert` statement, but has a detailed output of which things failed. A test function is any function with a name which starts with "test", like "test_func". The test function contains the assert statements and may or may not be in the same file as the piece of code being tested.
 
 You can use fixtures and parametrized tests to setup input and expected output to the test functions.
 
