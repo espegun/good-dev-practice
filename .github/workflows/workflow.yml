@@ -4,9 +4,8 @@
 name: Espen's first workflow
 
 on:
-  push
-  #push:
-  #  branches: [ $default-branch ]
+  push:
+    branches: [master]
   #pull_request:
   #  branches: [ $default-branch ]
 
