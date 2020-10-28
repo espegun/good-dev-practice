@@ -1,4 +1,4 @@
-setuptools (and setup.py)
+# How to setuptools (and setup.py)
 
 Purpose
 -------
@@ -27,8 +27,10 @@ Other fields to include could be:<br/>
 `install_requires=["boto3","numpy"]`<br/>
 TBD link: https://setuptools.readthedocs.io/en/latest/setuptools.html#new-and-changed-setup-keywords <br/>
 
+`$ pip-compile` Reads `install_requires` from `setup.py` and generates an updated `requirements.txt`.<br/>
+
+
 `$ setup.py sdist`  Build a distribution (tar.gz-file and a folder packagename.egg.info with dependencies)<br/>
-`$ pip-compile` Reads `install_requires` from `setup.py` and generate an updated `requirements.txt`.<br/>
 
 It may be a good idea to first read README.md then assign it to setup(long_description).<br/>
 
