@@ -80,4 +80,5 @@ except SomeError:
 [Latest docs](https://docs.pytest.org/en/latest/)<br/>
 [Writing test in general](https://docs.python-guide.org/writing/tests/)<br/>
 [Pytesting for data science](https://towardsdatascience.com/unit-testing-for-data-scientists-dc5e0cd397fb?source=emailShare-4bc2cf6e09a0-1600340162&_branch_match_id=804235815812269298)<br/>
+[Pytest project setup](https://gaopinghuang0.github.io/2018/08/03/python3-import-and-project-layout)<br/>
 [Good integration practices **To do!**](https://docs.pytest.org/en/stable/goodpractices.html)<br/>
