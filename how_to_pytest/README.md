@@ -54,6 +54,18 @@ def test_double_it(input1, output):
     assert double_it(input1) == output, "failed"
 ```
 
+Test that a functions raises an exception when (or very explicity - doesn't raise it when it shouldn't).
+```
+with pytest.raises(SomeError):
+    func(bad_data)
+
+try:
+    func(good_data)
+except SomeError:
+    pytest.fail("Unexpected SomeError when testing func with good_data.")
+```
+
+
 ## Useful commands
 `$ pip install pytest` Install from PyPI. <br/>
 `$ pytest -h` Show help.<br/>
@@ -68,4 +80,5 @@ def test_double_it(input1, output):
 [Latest docs](https://docs.pytest.org/en/latest/)<br/>
 [Writing test in general](https://docs.python-guide.org/writing/tests/)<br/>
 [Pytesting for data science](https://towardsdatascience.com/unit-testing-for-data-scientists-dc5e0cd397fb?source=emailShare-4bc2cf6e09a0-1600340162&_branch_match_id=804235815812269298)<br/>
+[Pytest project setup](https://gaopinghuang0.github.io/2018/08/03/python3-import-and-project-layout)<br/>
 [Good integration practices **To do!**](https://docs.pytest.org/en/stable/goodpractices.html)<br/>
