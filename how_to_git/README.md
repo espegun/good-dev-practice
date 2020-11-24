@@ -52,7 +52,7 @@ Set up a Personal Access Tokens (PAT) as described [here](https://docs.github.co
 `$ git rm filename` Unstage file. <br/>
 `$ git reset` Unstage everything staged (**Warning:** Adding `--hard` will not only unstage all, but revert all changes in the files.)<br/>
 `$ git commit -m "commit message"` Commit the staged files and create a saved snapshot of the files in the local repo.<br/>
-`$ git push` Add `òrigin master` to push to a remote he central master brach.
+`$ git push` Add `origin master` to push to a remote he central master brach.
 
 ### Pull and fetch
 In addition to the local repo, there is also a cached version of the central repo on your local computer.<br/>
