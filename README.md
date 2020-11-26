@@ -6,6 +6,6 @@ Espen's effort to move from writing code on and for my local PC to production qu
 ## Learnt from PRs - to be moved at some point
 - Use helper functions within functions to keep it readable.  
 - Always use `snake_case` variable names in Python, also when referring to `CamelCaseClassNames`.  
-- (Simen mener:) Rather move large if/else or other boilerplate sections into helper functions with intuitive
-names.
+- (Simen mener:) Move large if/else or other boilerplate sections into helper functions with intuitive
+names to make the main function more readable.
 - TBD
