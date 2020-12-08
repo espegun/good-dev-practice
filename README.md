@@ -5,6 +5,7 @@ Espen's effort to move from writing code on and for my local PC to production qu
 
 ## Learnt from PRs - to be moved at some point
 - Be super critical of your own doc string. Check spelling, grammar, conciseness, intuitivety and DRY with declaration/type hints.
+- Simplify logic in all possible cases. `if x == "" or x is None:` --> `if not x:`. Also use TKL-diagrams if needed. Avoid double negatives: `if x is not None:` --> `if x:`
 - Use helper functions within functions to keep it readable.  
 - Always use `snake_case` variable names in Python, also when referring to `CamelCaseClassNames`.  
 - (Simen mener:) Move large if/else or other boilerplate sections into helper functions with intuitive
@@ -16,7 +17,5 @@ names to make the main function more readable.
 - `date_range` is a more pythonic function name than `get_date_range`.
 - Class/function/variable names should be as consise and descriptive as possible.  
 - Don't use the doc string to describe what should or is described in the type hint.
-- Avoid double negatives. `if x is not None:` --> `if x:`
-- Simplify all logic: `if x == "" or x is None:` --> `if not x:`. Also use TKL-diagrams if needed.
 
 
