@@ -12,5 +12,6 @@ names to make the main function more readable.
 - First, do type check (`isinstance(value, type)`), så gjør de logiske operasjonene, ikke i en `if isinstance .. else ...`.  
 - Line changes between groups of `import`s, first standard libraries, then 3rd party, then import from own modules.  
 - DRY blir sjelden feil.
+- `date_range` is a more pythonic function name than `get_date_range`.
 
 
