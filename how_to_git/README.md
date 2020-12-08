@@ -23,7 +23,7 @@ Git is basically about linked commit nodes. Though one coordinating or central r
 * **Branching** makes it possible to work in parallell on different context while minimizing interdependencies.<br/>
 * **HEAD** is a reference to the last commit in the currently check-out branch.<br/>
 * **Merging** All the commits which are not present in the working branch are added to it. Sometimes, a separate merge commit will be created.<br/> 
-* **Pull request** Get feedback and possibly approval to merge your commit and branch into another branch (normally `master`). One commit/PR for each branch, then squash, merge and delete the branch (Origo Dataplatform. All merges into `master` are expected to be deployed in `prod` (while you may deploy to `dev` during individual development testing). To make reviews quick and precise, keep them small, independent and well explained. For new repos, to invite in *possible* reviewers, **Settings --> Manage access --> Invite teams or people** (then they can be added as reviewers). Also, to ask for PR on Slack, **Settings --> Webhooks** (copy settings from other repo).<br/> 
+* **Pull request** Get feedback and possibly approval to merge your commit and branch into another branch (normally `main`). One commit/PR for each branch, then squash, merge and delete the branch (Origo Dataplatform. All merges into `master` are expected to be deployed in `prod` (while you may deploy to `dev` during individual development testing). To make reviews quick and precise, keep them small, independent and well explained. For new repos, to invite in *possible* reviewers, **Settings --> Manage access --> Invite teams or people** (then they can be added as reviewers). Also, to ask for PR on Slack, **Settings --> Webhooks** (copy settings from other repo).<br/> 
 
 ![Image from unwiredlearning.com](git-flow.png)
 
@@ -37,9 +37,9 @@ Git is basically about linked commit nodes. Though one coordinating or central r
 Set up a Personal Access Tokens (PAT) as described [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)<br/>
 
 ### Initialize
-`$ git init` Create a local repo from scratch, all stored in the hidden `.git` folder.<br/>
+`$ git init` Create a local repo from scratch, all stored in the hidden `.git` folder. Then create a new repo on github.com before using `remote add` below to connect.<br/>
 `$ git clone [repo_url]` Clone a central repo to a local (with `.git`) into a subfolder. The URL can be copied from the central repo web page<br/>
-`$ git remote add origin [repo_url]` Set a remote repo as the push/pull target (it now has the name origin).<br/>
+`$ git remote add origin [repo_url]` e.g. `https://github.com/espegun/value_with_software.git` Set a remote repo as the push/pull target (it now has the name origin).<br/>
 `$ git remote -v` Get the URL of the central repo from which your local repo is syncing with through `push` and `pull`.<br/>
 `$ git remote rm <remote-name>` Remove reference to a remote repo (typically this will begit remote rm <remote-name> `òrigin`).<br/> 
 `.gitignore` This file should keep a list of files which should not be tracked, typically built or compiled files, personal configuration files, log, cache files and similar. Provide full path from the the working directory for specific files (e.g. `folder/my_log.txt`) or all fill which matches a pattern (e.g. `*.log`).<br/>
@@ -52,7 +52,7 @@ Set up a Personal Access Tokens (PAT) as described [here](https://docs.github.co
 `$ git rm filename` Unstage file. <br/>
 `$ git reset` Unstage everything staged (**Warning:** Adding `--hard` will not only unstage all, but revert all changes in the files.)<br/>
 `$ git commit -m "commit message"` Commit the staged files and create a saved snapshot of the files in the local repo.<br/>
-`$ git push` Add `origin master` to push to a remote he central master brach.
+`$ git push` Add `origin main` to push to a remote he central main brach.
 
 ### Pull and fetch
 In addition to the local repo, there is also a cached version of the central repo on your local computer.<br/>
