@@ -17,5 +17,6 @@ names to make the main function more readable.
 - Class/function/variable names should be as consise and descriptive as possible.  
 - Don't use the doc string to describe what should or is described in the type hint.
 - Avoid double negatives. `if x is not None:` --> `if x:`
-- ..
+- Simplify all logic: `if x == "" or x is None:` --> `if not x:`. Also use TKL-diagrams if needed.
+
 
