@@ -13,5 +13,6 @@ names to make the main function more readable.
 - Line changes between groups of `import`s, first standard libraries, then 3rd party, then import from own modules.  
 - DRY blir sjelden feil.
 - `date_range` is a more pythonic function name than `get_date_range`.
+- Don't use the doc string to describe what should or is described in the type hint.
 
 
