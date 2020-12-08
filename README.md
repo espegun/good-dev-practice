@@ -15,5 +15,6 @@ names to make the main function more readable.
 - `date_range` is a more pythonic function name than `get_date_range`.
 - Class/function/variable names should be as consise and descriptive as possible.  
 - Don't use the doc string to describe what should or is described in the type hint.
-
+- Avoid double negatives. `if x is not None:` --> `if x:`
+- ..
 
