@@ -8,7 +8,7 @@ Espen's effort to move from writing code on and for my local PC to production qu
 - Simplify logic in all possible cases. 
     - `if x == "" or x is None:` --> `if not x:`
     - Avoid double negatives: `if x is not None:` --> `if x:`. 
-    - Also use TKL-diagrams if needed. 
+    - Also use TKL-diagrams if needed - which cases can occur and not.
 - Precise naming!
     - Class/function/variable names should be as consise and descriptive as possible.
     - Always use `snake_case` variable names in Python, also when referring to `CamelCaseClassNames`.  
