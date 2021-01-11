@@ -22,3 +22,7 @@ names to make the main function more readable.
 - Line changes between groups of `import`s, first standard libraries, then 3rd party, then import from own modules.  
 
 - DRY blir sjelden feil.
+
+
+CI/CD og ML pipelines
+https://medium.com/@karthik.vaithyanathan/using-continuous-machine-learning-to-run-your-ml-pipeline-eeeeacad69a3
