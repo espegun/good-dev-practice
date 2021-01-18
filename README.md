@@ -24,5 +24,10 @@ names to make the main function more readable.
 - DRY blir sjelden feil.
 
 
+
+
+
+# Legg til på et tidspunt
+https://www.terraform.io/downloads.html
 CI/CD og ML pipelines
 https://medium.com/@karthik.vaithyanathan/using-continuous-machine-learning-to-run-your-ml-pipeline-eeeeacad69a3
