@@ -18,4 +18,4 @@ Now modify some of the settings in `serverless.yml`:
 ## Useful links
 [Getting started and installing](https://www.serverless.com/framework/docs/getting-started/)  
 [Getting started with AWS](https://www.serverless.com/framework/docs/providers/aws/)  
-[docs.serverless.com](Documentation)  
+[Documentation](docs.serverless.com)  
