@@ -1,7 +1,7 @@
 # How to docker
 
 ## The purpose
-Easy to move projects between different platforms.
+....
 
 ## How does it work?
 Docker
