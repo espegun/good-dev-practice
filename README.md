@@ -30,5 +30,9 @@ names to make the main function more readable.
 # Legg til på et tidspunt
 https://www.terraform.io/downloads.html  
 [Getting started with Terraform and AWS](https://learn.hashicorp.com/collections/terraform/aws-get-started)  
-CI/CD og ML pipelines
-https://medium.com/@karthik.vaithyanathan/using-continuous-machine-learning-to-run-your-ml-pipeline-eeeeacad69a3
+CI/CD og ML pipelines: https://medium.com/@karthik.vaithyanathan/using-continuous-machine-learning-to-run-your-ml-pipeline-eeeeacad69a3
+
+SOLID: https://link.medium.com/HgjlmchRddb  
+Mer bash (mangler et par av disse) https://link.medium.com/58GLROIVcdb  
+How-to-curl: https://link.medium.com/AfZeGwxVcdb  
+
