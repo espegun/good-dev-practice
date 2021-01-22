@@ -36,6 +36,7 @@ Every program you run in the command lines has 3 stream, STDIN, STDOUT and STDER
 `$ echo $ENVVAR` How to read (and in this case print) an environment variable.<br/>
 `$ seq 1 10` Prints `1` to `10`. Input to pipeline?<br/>
 `$ find . -name "*.py"` Recursively search from a starting folder. See [examples](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/).<br/>
+`$ grep -rnw '/path/to/somewhere/' -e 'pattern'` [Recursively find all files and lines with a certain text pattern.](https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux)    
 *TBD* `jq` parse json lines and files.<br/>
 
 ### Pipelines (by examples)
