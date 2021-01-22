@@ -34,5 +34,5 @@ CI/CD og ML pipelines: https://medium.com/@karthik.vaithyanathan/using-continuou
 
 SOLID: https://link.medium.com/HgjlmchRddb  
 Mer bash (mangler et par av disse) https://link.medium.com/58GLROIVcdb  
-How-to-curl: https://link.medium.com/AfZeGwxVcdb  
+
 
