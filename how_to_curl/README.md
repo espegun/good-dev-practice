@@ -18,4 +18,4 @@ A tool to transfer data to or from a server, supporting a bunch of protocols. It
 
 
 ## Useful links
-[10 Curl commands you should know](https://link.medium.com/AfZeGwxVcdb)  
+[10 Curl commands you should know](https://link.medium.com/AfZeGwxVcdb)  **WIP**
