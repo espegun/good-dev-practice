@@ -67,18 +67,19 @@ except SomeError:
 
 
 ## Useful commands
-`$ pip install pytest` Install from PyPI. <br/>
-`$ pytest -h` Show help.<br/>
-`$ pytest` To run the test(s), i.e. all functions `test*` in all files `test_*.py` or `*_test.py`. <br/>
-`$ pytest filename` Run only the tests in this file.<br/>
-`$ pytest -k string` Run only a subset of test functions. The `string` must match a part of the test function name for it to run.<br/>
-`$ pytest -m my_custom_mark` Run those test functions wrapped in `@pytest.mark.my_custom_mark`. This requires `import pytest` in the same file.<br/>
-`$ pytest -m "not my_custom_mark"` Run everything except the test functions with this mark.<br/>
+`$ pip install pytest` Install from PyPI.  
+`$ pytest -h` Show help.  
+`$ pytest` To run the test(s), i.e. all functions `test*` in all files `test_*.py` or `*_test.py`.  
+`$ pytest filename` Run only the tests in this file.  
+`$ pytest -k string` Run only a subset of test functions. The `string` must match a part of the test function name for it to run.  
+`$ pytest -m my_custom_mark` Run those test functions wrapped in `@pytest.mark.my_custom_mark`. This requires `import pytest` in the same file.  
+`$ pytest -m "not my_custom_mark"` Run everything except the test functions with this mark.  
 
 ## Useful links
-[Tutorial at guru99](https://www.guru99.com/pytest-tutorial.html)<br/>
-[Latest docs](https://docs.pytest.org/en/latest/)<br/>
-[Writing test in general](https://docs.python-guide.org/writing/tests/)<br/>
-[Pytesting for data science](https://towardsdatascience.com/unit-testing-for-data-scientists-dc5e0cd397fb?source=emailShare-4bc2cf6e09a0-1600340162&_branch_match_id=804235815812269298)<br/>
-[Pytest project setup](https://gaopinghuang0.github.io/2018/08/03/python3-import-and-project-layout)<br/>
-[Good integration practices **To do!**](https://docs.pytest.org/en/stable/goodpractices.html)<br/>
+[Tutorial at guru99](https://www.guru99.com/pytest-tutorial.html)  
+[Latest docs](https://docs.pytest.org/en/latest/)  
+[Writing test in general](https://docs.python-guide.org/writing/tests/)  
+[Pytesting for data science](https://towardsdatascience.com/unit-testing-for-data-scientists-dc5e0cd397fb?source=emailShare-4bc2cf6e09a0-1600340162&_branch_match_id=804235815812269298)  
+[Pytest project setup](https://gaopinghuang0.github.io/2018/08/03/python3-import-and-project-layout)  
+[Good integration practices](https://docs.pytest.org/en/stable/goodpractices.html) **To do!**  
+[Practical test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html?ref=hackernoon.com) **To do!**
