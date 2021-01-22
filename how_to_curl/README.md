@@ -1,4 +1,4 @@
-# How to <something>
+# How to curl
 
 ## The purpose
 Why is this actually useful?
