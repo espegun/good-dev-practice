@@ -4,7 +4,21 @@
 A tool to transfer data to or from a server, supporting a bunch of protocols. It can be run from the terminal, shell scripts and is often handy when working against APIs.
 
 ## How does it work?
-...
+
+Some reminders Reminder, not strictly limited to cURL, 
+
+### Reminder: [HTTP requests](https://www.w3schools.com/tags/ref_httpmethods.asp)
+- **GET** - To request data from a specified resource.
+- **POST** - To send data to create or update a resource.
+
+### Reminder: [HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+- **200 OK**: The request has succeeded.
+- **400 Bad Request**: Invalid syntax in the request.
+- **401 Unauthorized**: Unauthorized, the client must autenticate itself.
+- **403 Forbidden**: The client is identified, but does not have access.  
+- **404 Not Found**: The client was able to communicate with the server, but didn't get the needed response.
+
+
 
 ## Useful commands
 `$ curl www.google.com` Get the static content of a page.  
