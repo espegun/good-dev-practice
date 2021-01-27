@@ -54,6 +54,12 @@ TBD: Tutorial at the bottom.<br/>
 `$ cat name_age_sex.txt | xargs -n 2 echo` Use `-n` to specify number of arguments passed. `echo` may take any number, but will now print the *two first input lines* in *one line*.<br/>
 `cat name_age_sex.txt | cut -d "," -f 2 | xargs -n 1 sh -c 'python add_years.py "$@" 10' sh` Combine `xargs` with `sh -c 'some_command' sh` to make advanced inputs.`<br/>
 
+### Shell scripts
+`$ chmod +x file.sh` Make it executable.  
+`$ ./file.sh` To run it, you must include the path.  
+
+
+
 ## Useful links
 [Ubuntu command line at Tutorialspoint](https://www.tutorialspoint.com/ubuntu/ubuntu_command_line.htm)<br/>
 https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)<br/> 
