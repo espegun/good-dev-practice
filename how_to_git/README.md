@@ -65,7 +65,7 @@ In addition to the local repo, there is also a cached version of the central rep
 `$ git log` This will show the history of commits up to HEAD (scroll with arrow, quit with q). Some flags: `--all` all commits (including later than HEAD), e.g. `-3` latest 3 commits, `-p` detailed changes.  
 `$ git revert commit_number` Creates a new commit which has reverted the changes in the specified commit (but not those done later).  
 `$ git reset --hard commit_number` Your current checked out branch will now be at this commit, with later commits being undone.  
-`$ git checkout commit_number` Reverts your workspace to the state at the commit number (sets the HEAD to that commit). Then you are *not on a branch*, but great to explore old code.
+`$ git checkout commit_number` Reverts your workspace to the state at the commit number (sets the HEAD to that commit). Then you are *not on a branch*, but useful to explore and experiment with old code.
 
 ### Branching and merging
 `$ git branch branchname` Create a new branch.<br/>
