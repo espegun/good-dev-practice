@@ -61,13 +61,14 @@ TBD: Tutorial at the bottom.<br/>
 
 
 ## Useful links
-[Ubuntu command line at Tutorialspoint](https://www.tutorialspoint.com/ubuntu/ubuntu_command_line.htm)<br/>
-https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)<br/> 
-[Great overview of commands](https://medium.com/@duruldalkanat/bash-commands-guide-129c81cbfe87)<br/>
-TBD: Also see various commands at DS123<br/>
-Pipelines https://ryanstutorials.net/linuxtutorial/piping.php<br/>
-TBD: jq in commandline (sed for json) [jq](https://stedolan.github.io/jq/)<br/>
-TBD: https://shapeshed.com/jq-json/
-[Python and pipelines](https://docs.python.org/3/library/pipes.html)<br/>
-https://pymotw.com/3/subprocess/<br/>
-https://www.tutorialspoint.com/python3/os_popen.htm<br/>
+[Ubuntu command line at Tutorialspoint](https://www.tutorialspoint.com/ubuntu/ubuntu_command_line.htm)  
+https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)  
+[Great overview of commands](https://medium.com/@duruldalkanat/bash-commands-guide-129c81cbfe87)  
+TBD: Also see various commands at DS123  
+Pipelines https://ryanstutorials.net/linuxtutorial/piping.php  
+TBD: jq in commandline (sed for json) [jq](https://stedolan.github.io/jq/)  
+TBD: https://shapeshed.com/jq-json/  
+[Python and pipelines](https://docs.python.org/3/library/pipes.html)  
+https://pymotw.com/3/subprocess/  
+https://www.tutorialspoint.com/python3/os_popen.htm  
+[Shell scripting](https://www.javatpoint.com/shell-scripting-tutorial)  
