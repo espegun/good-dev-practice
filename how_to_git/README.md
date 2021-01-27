@@ -55,17 +55,17 @@ Set up a Personal Access Tokens (PAT) as described [here](https://docs.github.co
 `$ git push` Add `origin main` to push to a remote he central main brach.
 
 ### Pull and fetch
-In addition to the local repo, there is also a cached version of the central repo on your local computer.<br/>
-`$ git fetch origin` Check the central repo if there has been any updates and the local cached version of it. No harm will be done.<br/>
-`$ git pull origin [branch]` Check the central repo if there has been any updates and tries to merge this into your current HEAD branch and working files. Merge conflicts may occurs and it is recommended pull right after having committed.<br/>
+In addition to the local repo, there is also a cached version of the central repo on your local computer.  
+`$ git fetch origin` Check the central repo if there has been any updates and the local cached version of it. No harm will be done.  
+`$ git pull origin [branch]` Check the central repo if there has been any updates and tries to merge this into your current HEAD branch and working files. Merge conflicts may occurs and it is recommended pull right after having committed.  
 
 ### Looking at and possibly reverting changes (uncommitted and committed) 
-`$ git checkout HEAD filename` Revert this (tracked) file in the current workspace to it's state during the *last* commit.<br/>
-`$ git reset --hard HEAD` Revert all (tracked) files in the current workspace to it's state during the *last* commit.<br/>
-`$ git log` This will show the history of commits up to HEAD (scroll with arrow, quit with q). Some flags: `--all` all commits (including later than HEAD), e.g. `-3` latest 3 commits, `-p` detailed changes.<br/>
-`$ git revert commit_number` Creates a new commit which has reverted the changes in the specified commit (but not those done later).<br/>
-`$ git reset --hard commit_number` Your current checked out branch will now be at this commit, with later commits being undone.<br/>
-`$ git checkout commit_number` Reverts your workspace to the state at the commit number (sets the HEAD to that commit), *but* you are then not on a branch(!)<br/>
+`$ git checkout HEAD filename` Revert this (tracked) file in the current workspace to it's state during the *last* commit.  
+`$ git reset --hard HEAD` Revert all (tracked) files in the current workspace to it's state during the *last* commit.  
+`$ git log` This will show the history of commits up to HEAD (scroll with arrow, quit with q). Some flags: `--all` all commits (including later than HEAD), e.g. `-3` latest 3 commits, `-p` detailed changes.  
+`$ git revert commit_number` Creates a new commit which has reverted the changes in the specified commit (but not those done later).  
+`$ git reset --hard commit_number` Your current checked out branch will now be at this commit, with later commits being undone.  
+`$ git checkout commit_number` Reverts your workspace to the state at the commit number (sets the HEAD to that commit). Then you are *not on a branch*, but great to explore old code.
 
 ### Branching and merging
 `$ git branch branchname` Create a new branch.<br/>
