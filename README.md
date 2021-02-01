@@ -3,6 +3,13 @@ Espen's effort to move from writing code on and for my local PC to production qu
 
 [Writing Great Python Code](https://docs.python-guide.org/#writing-great-python-code)  
 
+## Debugging and problem solving
+* Always make sure your libraries and tools are updated. `python -m pip install --upgrade pip-tools`
+* Divide and conquer.
+* ...
+
+
+
 ## Learnt from PRs - to be moved at some point
 - Be super critical of your own doc string. Check spelling, grammar, conciseness, intuitivety and don't use the doc string to describe what should or is described in the type hint (DRY).
 - Simplify logic in all possible cases. 
