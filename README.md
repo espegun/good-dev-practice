@@ -3,12 +3,11 @@ Espen's effort to move from writing code on and for my local PC to production qu
 
 [Writing Great Python Code](https://docs.python-guide.org/#writing-great-python-code)  
 
-## Debugging and problem solving
+## Debugging and problem solving (_før_ du pinger Simen....)
+* Are you able to create environments where it consistenly works or not?
+* Understand the flow, divide and conquer.
 * Always make sure your libraries and tools are updated. `python3.X -m pip install --upgrade pip pip-tools setuptools wheel`
-* Divide and conquer.
-* ...
-
-
+* Unknown error message? Google it!
 
 ## Learnt from PRs - to be moved at some point
 - Be super critical of your own doc string. Check spelling, grammar, conciseness, intuitivety and don't use the doc string to describe what should or is described in the type hint (DRY).
