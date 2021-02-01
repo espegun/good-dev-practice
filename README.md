@@ -4,7 +4,7 @@ Espen's effort to move from writing code on and for my local PC to production qu
 [Writing Great Python Code](https://docs.python-guide.org/#writing-great-python-code)  
 
 ## Debugging and problem solving
-* Always make sure your libraries and tools are updated. `python -m pip install --upgrade pip-tools`
+* Always make sure your libraries and tools are updated. `python3.X -m pip install --upgrade pip pip-tools setuptools wheel`
 * Divide and conquer.
 * ...
 
