@@ -6,7 +6,7 @@ Espen's effort to move from writing code on and for my local PC to production qu
 ## Debugging and problem solving (_før_ du pinger Simen....)
 * Are you able to create environments where it consistenly works or not?
 * Understand the flow, divide and conquer.
-* Always make sure your libraries and tools are updated. `python3.X -m pip install --upgrade pip pip-tools setuptools wheel`
+* Always make sure your libraries and tools are updated. `python3.X -m pip install --upgrade pip pip-tools setuptools wheel black tox`
 * `rm -rf .tox ..build_venv` before testing again. Works remarkably often.
 * Unknown error message? Google it!
 
